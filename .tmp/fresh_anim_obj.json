@@ -1,0 +1,1753 @@
+{
+    "address":  "0x1987D990010",
+    "className":  "ABP_Scanner_C",
+    "fields":  {
+                   "ActiveAnimNotifyEventReference":  [
+
+                                                      ],
+                   "ActiveAnimNotifyState":  [
+
+                                             ],
+                   "AnimBlueprintExtension_Base":  {
+
+                                                   },
+                   "AnimBlueprintExtension_PropertyAccess":  {
+
+                                                             },
+                   "AnimGraphNode_BlendListByBool":  {
+
+                                                     },
+                   "AnimGraphNode_CopyPoseFromMesh":  {
+                                                          "RootBoneToCopy":  "Root",
+                                                          "SourceMeshComponent":  {
+                                                                                      "offset":  16,
+                                                                                      "type":  "WeakObjectProperty"
+                                                                                  },
+                                                          "bCopyCurves":  true,
+                                                          "bCopyCustomAttributes":  true,
+                                                          "bUseAttachedParent":  false,
+                                                          "bUseMeshPose":  true
+                                                      },
+                   "AnimGraphNode_Root":  {
+                                              "Result":  "\u003cstruct\u003e"
+                                          },
+                   "AnimGraphNode_SequencePlayer":  {
+                                                        "sequence":  {
+                                                                         "address":  "0x1983CEE5E00",
+                                                                         "className":  "AnimSequence"
+                                                                     }
+                                                    },
+                   "AnimGraphNode_Slot":  {
+                                              "SlotName":  "DefaultSlot",
+                                              "Source":  "\u003cstruct\u003e",
+                                              "bAlwaysUpdateSourcePose":  true
+                                          },
+                   "CurrentSkeleton":  {
+                                           "address":  "0x198373C52A0",
+                                           "className":  "Skeleton",
+                                           "fullName":  "Skeleton /Game/Art/Tools/Scanner_01/SKEL_Scanner.SKEL_Scanner"
+                                       },
+                   "Equipped":  true,
+                   "GameplayTagPropertyMap":  {
+                                                  "PropertyMappings":  [
+
+                                                                       ]
+                                              },
+                   "NotifyQueue":  {
+                                       "AnimNotifies":  [
+
+                                                        ],
+                                       "UnfilteredMontageAnimNotifies":  {
+                                                                             "note":  "not yet supported",
+                                                                             "type":  "MapProperty"
+                                                                         }
+                                   },
+                   "OnAllMontageInstancesEnded":  {
+                                                      "type":  "MulticastInlineDelegateProperty"
+                                                  },
+                   "OnMontageBlendedIn":  {
+                                              "type":  "MulticastInlineDelegateProperty"
+                                          },
+                   "OnMontageBlendingOut":  {
+                                                "type":  "MulticastInlineDelegateProperty"
+                                            },
+                   "OnMontageEnded":  {
+                                          "type":  "MulticastInlineDelegateProperty"
+                                      },
+                   "OnMontageSectionChanged":  {
+                                                   "type":  "MulticastInlineDelegateProperty"
+                                               },
+                   "OnMontageStarted":  {
+                                            "type":  "MulticastInlineDelegateProperty"
+                                        },
+                   "Primary State":  false,
+                   "RootMotionMode":  3,
+                   "SlotGroupInertializationRequestDataMap":  {
+                                                                  "note":  "not yet supported",
+                                                                  "type":  "MapProperty"
+                                                              },
+                   "Source Mesh Component":  {
+                                                 "address":  "0x197A9218890",
+                                                 "className":  "SkeletalMeshComponent",
+                                                 "fullName":  "SkeletalMeshComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Character_01_C_2147480073.CharacterMesh0"
+                                             },
+                   "UberGraphFrame":  {
+
+                                      },
+                   "ValidSourceMesh":  true,
+                   "__AnimBlueprintMutables":  {
+                                                   "__BoolProperty":  true
+                                               },
+                   "bPropagateNotifiesToLinkedInstances":  false,
+                   "bQueueMontageEvents":  false,
+                   "bReceiveNotifiesFromLinkedInstances":  false,
+                   "bUseMainInstanceMontageEvaluationData":  true,
+                   "bUseMultiThreadedAnimationUpdate":  true,
+                   "bUsingCopyPoseFromMesh":  true
+               },
+    "fullName":  "ABP_Scanner_C /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.EquippedMesh.ABP_Scanner_C_2147473700",
+    "methods":  [
+                    {
+                        "name":  "AnimGraph",
+                        "owner":  "ABP_Scanner_C",
+                        "params":  [
+                                       {
+                                           "name":  "AnimGraph",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Is First Use",
+                        "owner":  "ABP_Scanner_C",
+                        "params":  [
+                                       {
+                                           "name":  "CallFunc_GetLocalPlayerCharacter_ReturnValue",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_GetPlayerEventCountAsset_ReturnValue",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_LessEqual_IntInt_ReturnValue",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "SetCarryActor",
+                        "owner":  "ABP_Scanner_C",
+                        "params":  [
+                                       {
+                                           "name":  "Actor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetToolEnergy",
+                        "owner":  "ABP_Scanner_C",
+                        "params":  [
+                                       {
+                                           "name":  "EnergyLevel",
+                                           "type":  "DoubleProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AnimNotify_Primary On",
+                        "owner":  "ABP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "AnimNotify_Primary Off",
+                        "owner":  "ABP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "SetMeshDriver",
+                        "owner":  "ABP_Scanner_C",
+                        "params":  [
+                                       {
+                                           "name":  "SourceMeshComponent",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ExecuteUbergraph_ABP_Scanner",
+                        "owner":  "ABP_Scanner_C",
+                        "params":  [
+                                       {
+                                           "name":  "EntryPoint",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_Event_EnergyLevel",
+                                           "type":  "DoubleProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_IsValid_ReturnValue",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_Event_SourceMeshComponent",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_Event_Actor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "OnAscReady",
+                        "owner":  "SN2BaseAnimInstance",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "WasAnimNotifyTriggeredInStateMachine",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "AnimNotifyType",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "WasAnimNotifyTriggeredInSourceState",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "StateIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "AnimNotifyType",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "WasAnimNotifyTriggeredInAnyState",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "AnimNotifyType",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "WasAnimNotifyStateActiveInStateMachine",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "AnimNotifyStateType",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "WasAnimNotifyStateActiveInSourceState",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "StateIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "AnimNotifyStateType",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "WasAnimNotifyStateActiveInAnyState",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "AnimNotifyStateType",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "WasAnimNotifyNameTriggeredInStateMachine",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "NotifyName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "WasAnimNotifyNameTriggeredInSourceState",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "StateIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "NotifyName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "WasAnimNotifyNameTriggeredInAnyState",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "NotifyName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "UnlockAIResources",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "bUnlockMovement",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "UnlockAILogic",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "UnlinkAnimClassLayers",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InClass",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "TryGetPawnOwner",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "StopSlotAnimation",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InBlendOutTime",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "SlotNodeName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SnapshotPose",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Snapshot",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetUseMainInstanceMontageEvaluationData",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "bSet",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetRootMotionMode",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Value",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetReceiveNotifiesFromLinkedInstances",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "bSet",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetPropagateNotifiesToLinkedInstances",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "bSet",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetMorphTarget",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MorphTargetName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SavePoseSnapshot",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "SnapshotName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ResetDynamics",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InTeleportType",
+                                           "type":  "EnumProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "RequestTransitionEvent",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "EventName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "RequestTimeout",
+                                           "type":  "DoubleProperty"
+                                       },
+                                       {
+                                           "name":  "QueueMode",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "OverwriteMode",
+                                           "type":  "EnumProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "RequestSlotGroupInertialization",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InSlotGroupName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "duration",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "BlendProfile",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "RemovePoseSnapshot",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "SnapshotName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "QueryTransitionEvent",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "TransitionIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "EventName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "QueryAndMarkTransitionEvent",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "TransitionIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "EventName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "PlaySlotAnimationAsDynamicMontage_WithBlendSettings",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Asset",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "SlotNodeName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "BlendInSettings",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BlendOutSettings",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "InPlayRate",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "LoopCount",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "BlendOutTriggerTime",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "InTimeToStartMontageAt",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "PlaySlotAnimationAsDynamicMontage_WithBlendArgs",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Asset",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "SlotNodeName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "BlendIn",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BlendOut",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "InPlayRate",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "LoopCount",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "BlendOutTriggerTime",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "InTimeToStartMontageAt",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "PlaySlotAnimationAsDynamicMontage",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Asset",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "SlotNodeName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "BlendInTime",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "BlendOutTime",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "InPlayRate",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "LoopCount",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "BlendOutTriggerTime",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "InTimeToStartMontageAt",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "MontageSync_StopFollowing",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MontageFollower",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "MontageSync_Follow",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MontageFollower",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "OtherAnimInstance",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "MontageLeader",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_StopWithBlendSettings",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "BlendOutSettings",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_StopWithBlendOut",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "BlendOut",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_StopGroupByName",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InBlendOutTime",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "GroupName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_Stop",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InBlendOutTime",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_SetPosition",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "NewPosition",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_SetPlayRate",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "NewPlayRate",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_SetNextSection",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "SectionNameToChange",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "NextSection",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_Resume",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_PlayWithBlendSettings",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MontageToPlay",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "BlendInSettings",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "InPlayRate",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "ReturnValueType",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "InTimeToStartMontageAt",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bStopAllMontages",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "Montage_PlayWithBlendIn",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MontageToPlay",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "BlendIn",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "InPlayRate",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "ReturnValueType",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "InTimeToStartMontageAt",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bStopAllMontages",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "Montage_Play",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MontageToPlay",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "InPlayRate",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "ReturnValueType",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "InTimeToStartMontageAt",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bStopAllMontages",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "Montage_Pause",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_JumpToSectionsEnd",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "SectionName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_JumpToSection",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "SectionName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Montage_IsPlaying",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "Montage_IsActive",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "Montage_GetPosition",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "Montage_GetPlayRate",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "Montage_GetIsStopped",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "Montage_GetEffectivePlayRate",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "Montage_GetCurrentSection",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "NameProperty"
+                    },
+                    {
+                        "name":  "Montage_GetBlendTime",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Montage",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "LockAIResources",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "bLockMovement",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "LockAILogic",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "LinkAnimGraphByTag",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InTag",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "InClass",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "LinkAnimClassLayers",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InClass",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "IsUsingMainInstanceMontageEvaluationData",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsSyncGroupBetweenMarkers",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InSyncGroupName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "PreviousMarker",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "NextMarker",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bRespectMarkerOrder",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsSlotActive",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "SlotNodeName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsPlayingSlotAnimation",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Asset",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "SlotNodeName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsAnyMontagePlaying",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "HasMarkerBeenHitThisFrame",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "SyncGroup",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "MarkerName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetTimeToClosestMarker",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "SyncGroup",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "MarkerName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "OutMarkerTime",
+                                           "out":  true,
+                                           "type":  "FloatProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetSyncGroupPosition",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InSyncGroupName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetRelevantAnimTimeRemainingFraction",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "StateIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetRelevantAnimTimeRemaining",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "StateIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetRelevantAnimTimeFraction",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "StateIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetRelevantAnimTime",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "StateIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetRelevantAnimLength",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "StateIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetReceiveNotifiesFromLinkedInstances",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetPropagateNotifiesToLinkedInstances",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetOwningComponent",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetOwningActor",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetLinkedAnimLayerInstancesByGroup",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InGroup",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "OutLinkedInstances",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetLinkedAnimLayerInstanceByGroupAndClass",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InGroup",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "InClass",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetLinkedAnimLayerInstanceByGroup",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InGroup",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetLinkedAnimLayerInstanceByClass",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InClass",
+                                           "type":  "ClassProperty"
+                                       },
+                                       {
+                                           "name":  "bCheckForChildClass",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetLinkedAnimGraphInstancesByTag",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InTag",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "OutLinkedInstances",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetLinkedAnimGraphInstanceByTag",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InTag",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetInstanceTransitionTimeElapsedFraction",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "TransitionIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceTransitionTimeElapsed",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "TransitionIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceTransitionCrossfadeDuration",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "TransitionIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceStateWeight",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "StateIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceMachineWeight",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceCurrentStateElapsedTime",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceAssetPlayerTimeFromEndFraction",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "AssetPlayerIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceAssetPlayerTimeFromEnd",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "AssetPlayerIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceAssetPlayerTimeFraction",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "AssetPlayerIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceAssetPlayerTime",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "AssetPlayerIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInstanceAssetPlayerLength",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "AssetPlayerIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetDeltaSeconds",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetCurveValueWithDefault",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "CurveName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "DefaultValue",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "OutValue",
+                                           "out":  true,
+                                           "type":  "FloatProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetCurveValue",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "CurveName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetCurrentStateName",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "MachineIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "NameProperty"
+                    },
+                    {
+                        "name":  "GetCurrentActiveMontage",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetBlendProfileByName",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "InBlendProfileName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetAllCurveNames",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "OutNames",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetActiveCurveNames",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "CurveType",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "OutNames",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "DynamicMontage_IsPlayingFrom",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Animation",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "ClearTransitionEvents",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "EventName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ClearMorphTargets",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "ClearAllTransitionEvents",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "CalculateDirection",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "Velocity",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BaseRotation",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "BlueprintUpdateAnimation",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaTimeX",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "BlueprintThreadSafeUpdateAnimation",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaTime",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "BlueprintPostEvaluateAnimation",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "BlueprintLinkedAnimationLayersInitialized",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "BlueprintInitializeAnimation",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "BlueprintBeginPlay",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "Blueprint_GetSlotMontageLocalWeight",
+                        "owner":  "AnimInstance",
+                        "params":  [
+                                       {
+                                           "name":  "SlotNodeName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "Blueprint_GetMainAnimInstance",
+                        "owner":  "AnimInstance",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "ExecuteUbergraph",
+                        "owner":  "Object",
+                        "params":  [
+                                       {
+                                           "name":  "EntryPoint",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    }
+                ],
+    "super":  "SN2BaseAnimInstance"
+}

@@ -1,0 +1,3861 @@
+{
+    "address":  "0x2BB6D98BE60",
+    "className":  "StaticMeshComponent",
+    "fields":  {
+                   "AlwaysLoadOnClient":  true,
+                   "AlwaysLoadOnServer":  true,
+                   "AssetUserData":  [
+
+                                     ],
+                   "AttachChildren":  [
+
+                                      ],
+                   "AttachParent":  null,
+                   "AttachSocketName":  "None",
+                   "BodyInstance":  {
+                                        "AngularDamping":  0.0,
+                                        "COMNudge":  "\u003cstruct\u003e",
+                                        "CollisionEnabled":  0,
+                                        "CollisionProfileName":  "Custom",
+                                        "CollisionResponses":  "\u003cstruct\u003e",
+                                        "CustomDOFPlaneNormal":  "\u003cstruct\u003e",
+                                        "CustomSleepThresholdMultiplier":  1.0,
+                                        "DOFMode":  0,
+                                        "GravityGroupIndex":  0,
+                                        "InertiaTensorScale":  "\u003cstruct\u003e",
+                                        "LinearDamping":  0.009999999776482582,
+                                        "MassInKgOverride":  100.0,
+                                        "MassScale":  1.0,
+                                        "MaxAngularVelocity":  3600.0,
+                                        "MaxDepenetrationVelocity":  0.0,
+                                        "ObjectType":  1,
+                                        "PhysMaterialOverride":  null,
+                                        "PhysicsBlendWeight":  0.0,
+                                        "PositionSolverIterationCount":  8,
+                                        "ProjectionSolverIterationCount":  1,
+                                        "SleepFamily":  {
+                                                            "enumType":  "ESleepFamily",
+                                                            "value":  0
+                                                        },
+                                        "SolverAsyncDeltaTime":  0.01666666753590107,
+                                        "StabilizationThresholdMultiplier":  1.0,
+                                        "VelocitySolverIterationCount":  2,
+                                        "WalkableSlopeOverride":  "\u003cstruct\u003e",
+                                        "bIgnoreAnalyticCollisions":  false,
+                                        "bInertiaConditioning":  true,
+                                        "bInterpolateWhenSubStepping":  true,
+                                        "bLockRotation":  true,
+                                        "bLockTranslation":  true,
+                                        "bLockXRotation":  false,
+                                        "bLockXTranslation":  false,
+                                        "bLockYRotation":  false,
+                                        "bLockYTranslation":  false,
+                                        "bLockZRotation":  false,
+                                        "bLockZTranslation":  false,
+                                        "bNotifyRigidBodyCollision":  false,
+                                        "bOneWayInteraction":  false,
+                                        "bOverrideMaxAngularVelocity":  false,
+                                        "bOverrideMaxDepenetrationVelocity":  false,
+                                        "bOverrideSolverAsyncDeltaTime":  false,
+                                        "bOverrideWalkableSlopeOnInstance":  false,
+                                        "bSmoothEdgeCollisions":  false,
+                                        "bUseCCD":  false,
+                                        "bUseMACD":  false
+                                    },
+                   "BoundsScale":  1.0,
+                   "CachedMaxDrawDistance":  0.0,
+                   "CanCharacterStepUpOn":  1,
+                   "CastShadow":  true,
+                   "CastShadowDetailMode":  0,
+                   "ClientAttachedChildren":  [
+
+                                              ],
+                   "ComponentTags":  [
+
+                                     ],
+                   "ComponentVelocity":  {
+                                             "x":  0.0,
+                                             "y":  0.0,
+                                             "z":  0.0
+                                         },
+                   "CreationMethod":  {
+                                          "enumType":  "EComponentCreationMethod",
+                                          "value":  0
+                                      },
+                   "CustomDepthStencilValue":  0,
+                   "CustomDepthStencilWriteMask":  {
+                                                       "enumType":  "ERendererStencilMask",
+                                                       "value":  0
+                                                   },
+                   "CustomPrimitiveData":  {
+                                               "Data":  [
+
+                                                        ]
+                                           },
+                   "CustomPrimitiveDataInternal":  {
+                                                       "Data":  [
+
+                                                                ]
+                                                   },
+                   "DepthPriorityGroup":  0,
+                   "DetailMode":  0,
+                   "DistanceFieldIndirectShadowMinVisibility":  0.10000000149011612,
+                   "DistanceFieldSelfShadowBias":  0.0,
+                   "ExcludeFromHLODLevels":  0,
+                   "FirstPersonPrimitiveType":  {
+                                                    "enumType":  "EFirstPersonPrimitiveType",
+                                                    "value":  0
+                                                },
+                   "ForcedLodModel":  0,
+                   "HLODBatchingPolicy":  {
+                                              "enumType":  "EHLODBatchingPolicy",
+                                              "value":  0
+                                          },
+                   "IndirectLightingCacheQuality":  1,
+                   "LDMaxDrawDistance":  0.0,
+                   "LODData":  [
+
+                               ],
+                   "LODParentPrimitive":  null,
+                   "LightingChannels":  {
+                                            "bChannel0":  true,
+                                            "bChannel1":  false,
+                                            "bChannel2":  false
+                                        },
+                   "LightmapType":  {
+                                        "enumType":  "ELightmapType",
+                                        "value":  0
+                                    },
+                   "LightmassSettings":  {
+                                             "DiffuseBoost":  1.0,
+                                             "EmissiveBoost":  1.0,
+                                             "EmissiveLightExplicitInfluenceRadius":  0.0,
+                                             "EmissiveLightFalloffExponent":  8.0,
+                                             "FullyOccludedSamplesFraction":  1.0,
+                                             "bShadowIndirectOnly":  false,
+                                             "bUseEmissiveForStaticLighting":  false,
+                                             "bUseTwoSidedLighting":  false,
+                                             "bUseVertexNormalForHemisphereGather":  false
+                                         },
+                   "MaterialCacheTexture":  null,
+                   "MaterialSlotsOverlayMaterial":  [
+
+                                                    ],
+                   "MeshPaintTextureCooked":  null,
+                   "MeshPaintTextureOverride":  null,
+                   "MinDrawDistance":  0.0,
+                   "MinLOD":  0,
+                   "Mobility":  2,
+                   "MoveIgnoreActors":  [
+
+                                        ],
+                   "MoveIgnoreComponents":  [
+
+                                            ],
+                   "NanitePixelProgrammableDistance":  0.0,
+                   "OnBeginCursorOver":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnClicked":  {
+                                     "type":  "MulticastSparseDelegateProperty"
+                                 },
+                   "OnComponentActivated":  {
+                                                "type":  "MulticastSparseDelegateProperty"
+                                            },
+                   "OnComponentBeginOverlap":  {
+                                                   "type":  "MulticastSparseDelegateProperty"
+                                               },
+                   "OnComponentDeactivated":  {
+                                                  "type":  "MulticastSparseDelegateProperty"
+                                              },
+                   "OnComponentEndOverlap":  {
+                                                 "type":  "MulticastSparseDelegateProperty"
+                                             },
+                   "OnComponentHit":  {
+                                          "type":  "MulticastSparseDelegateProperty"
+                                      },
+                   "OnComponentPhysicsStateChanged":  {
+                                                          "type":  "MulticastSparseDelegateProperty"
+                                                      },
+                   "OnComponentSleep":  {
+                                            "type":  "MulticastSparseDelegateProperty"
+                                        },
+                   "OnComponentWake":  {
+                                           "type":  "MulticastSparseDelegateProperty"
+                                       },
+                   "OnEndCursorOver":  {
+                                           "type":  "MulticastSparseDelegateProperty"
+                                       },
+                   "OnInputTouchBegin":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnInputTouchEnd":  {
+                                           "type":  "MulticastSparseDelegateProperty"
+                                       },
+                   "OnInputTouchEnter":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnInputTouchLeave":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnReleased":  {
+                                      "type":  "MulticastSparseDelegateProperty"
+                                  },
+                   "OverlayMaterial":  null,
+                   "OverlayMaterialMaxDrawDistance":  0.0,
+                   "OverriddenLightMapRes":  64,
+                   "OverriddenMeshPaintTextureCoordinateIndex":  0,
+                   "OverriddenMeshPaintTextureResolution":  0,
+                   "OverrideMaterials":  [
+
+                                         ],
+                   "PhysicsVolume":  {
+                                         "offset":  200,
+                                         "type":  "WeakObjectProperty"
+                                     },
+                   "PhysicsVolumeChangedDelegate":  {
+                                                        "type":  "MulticastSparseDelegateProperty"
+                                                    },
+                   "PrimaryComponentTick":  {
+
+                                            },
+                   "RayTracingGroupCullingPriority":  {
+                                                          "enumType":  "ERayTracingGroupCullingPriority",
+                                                          "value":  4
+                                                      },
+                   "RayTracingGroupId":  -1,
+                   "RelativeLocation":  {
+                                            "x":  -327904.7057584563,
+                                            "y":  411859.4061964192,
+                                            "z":  -2290.0402226533806
+                                        },
+                   "RelativeRotation":  {
+                                            "x":  1.265941786220209,
+                                            "y":  -1.7507677232047756,
+                                            "z":  5.001406787696073
+                                        },
+                   "RelativeScale3D":  {
+                                           "x":  1.447757363319397,
+                                           "y":  1.447757363319397,
+                                           "z":  1.447757363319397
+                                       },
+                   "RuntimeVirtualTextures":  [
+
+                                              ],
+                   "ShadowCacheInvalidationBehavior":  {
+                                                           "enumType":  "EShadowCacheInvalidationBehavior",
+                                                           "value":  0
+                                                       },
+                   "StaticMesh":  {
+                                      "address":  "0x2BB514632B0",
+                                      "className":  "StaticMesh",
+                                      "fullName":  "StaticMesh /Game/VFX/Meshes/BasicShapes/SM_SM_OxygenBubble.SM_SM_OxygenBubble"
+                                  },
+                   "StreamingDistanceMultiplier":  1.0,
+                   "StreamingTextureData":  [
+
+                                            ],
+                   "SubDivisionStepSize":  32,
+                   "TranslucencySortDistanceOffset":  0.0,
+                   "TranslucencySortPriority":  0,
+                   "UCSSerializationIndex":  -1,
+                   "UWE_AlwaysPerformSweepTestOnMove":  false,
+                   "ViewOwnerDepthPriorityGroup":  0,
+                   "VirtualTextureCullMips":  0,
+                   "VirtualTextureLodBias":  0,
+                   "VirtualTextureMinCoverage":  0,
+                   "VirtualTextureRenderPassType":  {
+                                                        "enumType":  "ERuntimeVirtualTextureMainPassType",
+                                                        "value":  1
+                                                    },
+                   "VisibilityId":  -1,
+                   "WireframeColorOverride":  {
+                                                  "A":  255,
+                                                  "B":  255,
+                                                  "G":  255,
+                                                  "R":  255
+                                              },
+                   "WorldPositionOffsetDisableDistance":  6000,
+                   "bAbsoluteLocation":  false,
+                   "bAbsoluteRotation":  false,
+                   "bAbsoluteScale":  false,
+                   "bAffectDistanceFieldLighting":  true,
+                   "bAffectDynamicIndirectLighting":  true,
+                   "bAffectIndirectLightingWhileHidden":  false,
+                   "bAllowCullDistanceVolume":  true,
+                   "bAlwaysCreatePhysicsState":  false,
+                   "bApplyImpulseOnDamage":  true,
+                   "bAutoActivate":  false,
+                   "bBoundsChangeTriggersStreamingDataRebuild":  true,
+                   "bCanEverAffectNavigation":  false,
+                   "bCastCinematicShadow":  false,
+                   "bCastContactShadow":  false,
+                   "bCastDistanceFieldIndirectShadow":  false,
+                   "bCastDynamicShadow":  true,
+                   "bCastFarShadow":  false,
+                   "bCastHiddenShadow":  false,
+                   "bCastInsetShadow":  false,
+                   "bCastShadowAsTwoSided":  false,
+                   "bCastStaticShadow":  true,
+                   "bCastVolumetricTranslucentShadow":  false,
+                   "bComponentToWorldUpdated":  true,
+                   "bComputeBoundsOnceForGame":  false,
+                   "bComputeFastLocalBounds":  false,
+                   "bComputedBoundsOnceForGame":  false,
+                   "bDisallowMeshPaintPerInstance":  false,
+                   "bDisallowNanite":  false,
+                   "bEditableWhenInherited":  true,
+                   "bEmissiveLightSource":  false,
+                   "bEnableAutoLODGeneration":  true,
+                   "bEnableMaterialParameterCaching":  false,
+                   "bEnableTextureColorMeshPainting":  true,
+                   "bEnableVertexColorMeshPainting":  true,
+                   "bEvaluateWorldPositionOffset":  true,
+                   "bEvaluateWorldPositionOffsetInRayTracing":  false,
+                   "bExcludeFromLightAttachmentGroup":  false,
+                   "bFillCollisionUnderneathForNavmesh":  false,
+                   "bForceDisableNanite":  false,
+                   "bForceMipStreaming":  false,
+                   "bForceNaniteForMasked":  false,
+                   "bForceNavigationObstacle":  true,
+                   "bForceReceivesDecals":  false,
+                   "bGenerateOverlapEvents":  false,
+                   "bHasCustomNavigableGeometry":  1,
+                   "bHasNoStreamableTextures":  false,
+                   "bHasPerInstanceHitProxies":  false,
+                   "bHiddenInGame":  false,
+                   "bHiddenInSceneCapture":  false,
+                   "bHoldout":  false,
+                   "bIgnoreInstanceForTextureStreaming":  false,
+                   "bIgnoreRadialForce":  false,
+                   "bIgnoreRadialImpulse":  false,
+                   "bIsActive":  false,
+                   "bIsActorTextureStreamingBuiltData":  false,
+                   "bIsBeingMovedByEditor":  false,
+                   "bIsEditorOnly":  false,
+                   "bIsNotRenderAttachmentRoot":  false,
+                   "bIsValidTextureStreamingBuiltData":  false,
+                   "bLightAsIfStatic":  false,
+                   "bLightAttachmentsAsGroup":  false,
+                   "bMultiBodyOverlap":  false,
+                   "bNetAddressable":  false,
+                   "bNeverDistanceCull":  false,
+                   "bOnlyOwnerSee":  false,
+                   "bOverrideDistanceFieldSelfShadowBias":  false,
+                   "bOverrideLightMapRes":  false,
+                   "bOverrideMeshPaintTextureCoordinateIndex":  false,
+                   "bOverrideMeshPaintTextureResolution":  false,
+                   "bOverrideMinLOD":  false,
+                   "bOverrideNavigationExport":  false,
+                   "bOverrideWireframeColor":  false,
+                   "bOwnerNoSee":  false,
+                   "bRasterizeAsFilledConvexVolume":  false,
+                   "bRayTracingFarField":  false,
+                   "bReceiveMobileCSMShadows":  true,
+                   "bReceivesDecals":  true,
+                   "bRenderCustomDepth":  false,
+                   "bRenderInDepthPass":  true,
+                   "bRenderInMainPass":  true,
+                   "bReplicatePhysicsToAutonomousProxy":  true,
+                   "bReplicateUsingRegisteredSubObjectList":  false,
+                   "bReplicates":  false,
+                   "bReturnMaterialOnMove":  false,
+                   "bReverseCulling":  false,
+                   "bSelectable":  true,
+                   "bSelfShadowOnly":  false,
+                   "bShouldBeAttached":  false,
+                   "bShouldSnapLocationWhenAttached":  false,
+                   "bShouldSnapRotationWhenAttached":  false,
+                   "bShouldSnapScaleWhenAttached":  false,
+                   "bShouldUpdatePhysicsVolume":  false,
+                   "bSingleSampleShadowFromStationaryLights":  false,
+                   "bSortTriangles":  false,
+                   "bStaticWhenNotMoveable":  true,
+                   "bTraceComplexOnMove":  false,
+                   "bTreatAsBackgroundForOcclusion":  false,
+                   "bUseAsOccluder":  true,
+                   "bUseAttachParentBound":  false,
+                   "bUseDefaultCollision":  false,
+                   "bUseEditorCompositing":  false,
+                   "bUseNegativeDistanceField":  false,
+                   "bUseSubDivisions":  true,
+                   "bUseViewOwnerDepthPriorityGroup":  false,
+                   "bVisible":  true,
+                   "bVisibleInRayTracing":  true,
+                   "bVisibleInRealTimeSkyCaptures":  true,
+                   "bVisibleInReflectionCaptures":  true,
+                   "bVisibleInSceneCaptureOnly":  false,
+                   "bWantsEditorEffects":  false,
+                   "bWorldPositionOffsetWritesVelocity":  true
+               },
+    "fullName":  "StaticMeshComponent /Game/Maps/Main/L_Main/_Generated_/E5GZQA2TB8Y2Y8CXEHSDKVXTE.L_Main.PersistentLevel.BP_OxygenBubble_C_2147321312.Mesh",
+    "methods":  [
+                    {
+                        "name":  "UpdateInitialEvaluateWorldPositionOffset",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "SetWorldPositionOffsetDisableDistance",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewValue",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetStaticMesh",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewMesh",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "SetReverseCulling",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ReverseCulling",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetForcedLodModel",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewForcedLodModel",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetForceDisableNanite",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bInForceDisableNanite",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetEvaluateWorldPositionOffsetInRayTracing",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewValue",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetEvaluateWorldPositionOffset",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewValue",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetDistanceFieldSelfShadowBias",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewValue",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceivesDecals",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "OnRep_StaticMesh",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "OldStaticMesh",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetLocalBounds",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "min",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "max",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetInitialEvaluateWorldPositionOffset",
+                        "owner":  "StaticMeshComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "SetVectorParameterValueOnMaterials",
+                        "owner":  "MeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ParameterName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "ParameterValue",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetScalarParameterValueOnMaterials",
+                        "owner":  "MeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ParameterName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "ParameterValue",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetOverlayMaterialMaxDrawDistance",
+                        "owner":  "MeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InMaxDrawDistance",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetOverlayMaterial",
+                        "owner":  "MeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewOverlayMaterial",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetColorParameterValueOnMaterials",
+                        "owner":  "MeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ParameterName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "ParameterValue",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "PrestreamTextures",
+                        "owner":  "MeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Seconds",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bPrioritizeCharacterTextures",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "CinematicTextureGroups",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "PrestreamMeshLODs",
+                        "owner":  "MeshComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Seconds",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetOverlayMaterialMaxDrawDistance",
+                        "owner":  "MeshComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetOverlayMaterial",
+                        "owner":  "MeshComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetMaterials",
+                        "owner":  "MeshComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ArrayProperty"
+                    },
+                    {
+                        "name":  "WasRecentlyRendered",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Tolerance",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "WakeRigidBody",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "WakeAllRigidBodies",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "UnregisterAsFocalPointInPhysicsReplicationLOD",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "SetWalkableSlopeOverride",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewOverride",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetVisibleInSceneCaptureOnly",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bValue",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetVisibleInRayTracing",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewVisibleInRayTracing",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetVectorParameterForDefaultCustomPrimitiveData",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ParameterName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetVectorParameterForCustomPrimitiveData",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ParameterName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetUseMACD",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InUseMACD",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetUseCCD",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InUseCCD",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetUpdateKinematicFromSimulation",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bUpdateKinematicFromSimulation",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetTranslucentSortPriority",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewTranslucentSortPriority",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetTranslucencySortDistanceOffset",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewTranslucencySortDistanceOffset",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetStaticWhenNotMoveable",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bInStaticWhenNotMoveable",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetSingleSampleShadowFromStationaryLights",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewSingleSampleShadowFromStationaryLights",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetSimulatePhysics",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bSimulate",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetScalarParameterForDefaultCustomPrimitiveData",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ParameterName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetScalarParameterForCustomPrimitiveData",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ParameterName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetRenderInMainPass",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bValue",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetRenderInDepthPass",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bValue",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetRenderCustomDepth",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bValue",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetReceivesDecals",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewReceivesDecals",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetPhysMaterialOverride",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewPhysMaterial",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetPhysicsMaxAngularVelocityInRadians",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewMaxAngVel",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bAddToCurrent",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetPhysicsMaxAngularVelocityInDegrees",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewMaxAngVel",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bAddToCurrent",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetPhysicsLinearVelocity",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewVel",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bAddToCurrent",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetPhysicsAngularVelocityInRadians",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewAngVel",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bAddToCurrent",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetPhysicsAngularVelocityInDegrees",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewAngVel",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bAddToCurrent",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetOwnerNoSee",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewOwnerNoSee",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetOnlyOwnerSee",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewOnlyOwnerSee",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetNotifyRigidBodyCollision",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewNotifyRigidBodyCollision",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetMaxDepenetrationVelocity",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "InMaxDepenetrationVelocity",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetMaterialByName",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "MaterialSlotName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "Material",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetMaterial",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ElementIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Material",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetMassScale",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "InMassScale",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetMassOverrideInKg",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "MassInKg",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bOverrideMass",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetLinearDamping",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InDamping",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetLightingChannels",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bChannel0",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bChannel1",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bChannel2",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetLightAttachmentsAsGroup",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bInLightAttachmentsAsGroup",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetIgnoreBoundsForEditorFocus",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bIgnore",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetHoldout",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewHoldout",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetHiddenInSceneCapture",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bValue",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetGyroscopicTorqueEnabled",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bInGyroscopicTorqueEnabled",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetGenerateOverlapEvents",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bInGenerateOverlapEvents",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetFirstPersonPrimitiveType",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Value",
+                                           "type":  "EnumProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetExcludeFromLightAttachmentGroup",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bInExcludeFromLightAttachmentGroup",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetExcludeForSpecificHLODLevels",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InExcludeForSpecificHLODLevels",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetExcludedFromHLODLevel",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "HLODLevel",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "bExcluded",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetEnableGravity",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bGravityEnabled",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetEmissiveLightSource",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewEmissiveLightSource",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetDefaultCustomPrimitiveDataVector4",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetDefaultCustomPrimitiveDataVector3",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetDefaultCustomPrimitiveDataVector2",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetDefaultCustomPrimitiveDataFloatArray",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Values",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetDefaultCustomPrimitiveDataFloat",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCustomPrimitiveDataVector4",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCustomPrimitiveDataVector3",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCustomPrimitiveDataVector2",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCustomPrimitiveDataFloatArray",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Values",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCustomPrimitiveDataFloat",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DataIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCustomDepthStencilWriteMask",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "WriteMaskBit",
+                                           "type":  "EnumProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCustomDepthStencilValue",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Value",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCullDistance",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewCullDistance",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetConstraintMode",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ConstraintMode",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCollisionResponseToChannel",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Channel",
+                                           "type":  "ByteProperty"
+                                       },
+                                       {
+                                           "name":  "NewResponse",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCollisionResponseToAllChannels",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewResponse",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCollisionProfileName",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InCollisionProfileName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bUpdateOverlaps",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCollisionObjectType",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Channel",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCollisionEnabled",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewType",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCenterOfMass",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "CenterOfMassOffset",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCastShadow",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewCastShadow",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCastInsetShadow",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bInCastInsetShadow",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCastHiddenShadow",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewCastHiddenShadow",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetCastContactShadow",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bInCastContactShadow",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetBoundsScale",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewBoundsScale",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAngularDamping",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InDamping",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAllUseMACD",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InUseMACD",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAllUseCCD",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InUseCCD",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAllPhysicsLinearVelocity",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewVel",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bAddToCurrent",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAllPhysicsAngularVelocityInRadians",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewAngVel",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bAddToCurrent",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAllPhysicsAngularVelocityInDegrees",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewAngVel",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bAddToCurrent",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAllMassScale",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InMassScale",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAffectIndirectLightingWhileHidden",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewAffectIndirectLightingWhileHidden",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAffectDynamicIndirectLighting",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewAffectDynamicIndirectLighting",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAffectDistanceFieldLighting",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewAffectDistanceFieldLighting",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ScaleByMomentOfInertia",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InputVector",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "RegisterAsFocalPointInPhysicsReplicationLOD",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "PutRigidBodyToSleep",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SphereTraceComponent",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "TraceStart",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "TraceEnd",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "SphereRadius",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bTraceComplex",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bShowTrace",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bPersistentShowTrace",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "HitLocation",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "HitNormal",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "out":  true,
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "OutHit",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_SphereOverlapComponent",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InSphereCentre",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "InSphereRadius",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bTraceComplex",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bShowTrace",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bPersistentShowTrace",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "HitLocation",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "HitNormal",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "out":  true,
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "OutHit",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_LineTraceComponent",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "TraceStart",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "TraceEnd",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTraceComplex",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bShowTrace",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bPersistentShowTrace",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "HitLocation",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "HitNormal",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "out":  true,
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "OutHit",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_IsQueryCollisionEnabled",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_IsPhysicsCollisionEnabled",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_IsCollisionEnabled",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_BoxOverlapComponent",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InBoxCentre",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "InBox",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTraceComplex",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bShowTrace",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bPersistentShowTrace",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "HitLocation",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "HitNormal",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "out":  true,
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "OutHit",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsOverlappingComponent",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "OtherComp",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsOverlappingActor",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Other",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsMaterialSlotNameValid",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "MaterialSlotName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsGravityEnabled",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsExcludedFromHLODLevel",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "HLODLevel",
+                                           "type":  "EnumProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsAnyRigidBodyAwake",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "InvalidateLumenSurfaceCache",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "IgnoreComponentWhenMoving",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Component",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "bShouldIgnore",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "IgnoreActorWhenMoving",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Actor",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "bShouldIgnore",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "HandlePostMigrationPhysicsStateChanged",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ChangedComponent",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "StateChange",
+                                           "type":  "EnumProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetWalkableSlopeOverride",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetUpdateKinematicFromSimulation",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetStaticWhenNotMoveable",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetPhysicsLinearVelocityAtPoint",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Point",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetPhysicsLinearVelocity",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetPhysicsAngularVelocityInRadians",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetPhysicsAngularVelocityInDegrees",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetOverlappingComponents",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "OutOverlappingComponents",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetOverlappingActors",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "OverlappingActors",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       },
+                                       {
+                                           "name":  "ClassFilter",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetNumMaterials",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "IntProperty"
+                    },
+                    {
+                        "name":  "GetMaxDepenetrationVelocity",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetMaterialSlotNames",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ArrayProperty"
+                    },
+                    {
+                        "name":  "GetMaterialIndex",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "MaterialSlotName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "IntProperty"
+                    },
+                    {
+                        "name":  "GetMaterialFromCollisionFaceIndex",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "FaceIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "SectionIndex",
+                                           "out":  true,
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetMaterialByName",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "MaterialSlotName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetMaterial",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ElementIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetMassScale",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetMass",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetLinearDamping",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInertiaTensor",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetIgnoreBoundsForEditorFocus",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetGyroscopicTorqueEnabled",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetGenerateOverlapEvents",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetExcludeForSpecificHLODLevels",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ArrayProperty"
+                    },
+                    {
+                        "name":  "GetCustomPrimitiveDataIndexForVectorParameter",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ParameterName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "IntProperty"
+                    },
+                    {
+                        "name":  "GetCustomPrimitiveDataIndexForScalarParameter",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ParameterName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "IntProperty"
+                    },
+                    {
+                        "name":  "GetCollisionResponseToChannel",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Channel",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ],
+                        "returnType":  "ByteProperty"
+                    },
+                    {
+                        "name":  "GetCollisionProfileName",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "NameProperty"
+                    },
+                    {
+                        "name":  "GetCollisionObjectType",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ByteProperty"
+                    },
+                    {
+                        "name":  "GetCollisionEnabled",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ByteProperty"
+                    },
+                    {
+                        "name":  "GetClosestPointOnCollision",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Point",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "OutPointOnBody",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetCenterOfMass",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetBodyInstanceAsyncPhysicsTickHandle",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bGetWelded",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "Index",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetAngularDamping",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "CreateDynamicMaterialInstance",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ElementIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "SourceMaterial",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "OptionalName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "CreateAndSetMaterialInstanceDynamicFromMaterial",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ElementIndex",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "Parent",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "CreateAndSetMaterialInstanceDynamic",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ElementIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "CopyArrayOfMoveIgnoreComponents",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ArrayProperty"
+                    },
+                    {
+                        "name":  "CopyArrayOfMoveIgnoreActors",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ArrayProperty"
+                    },
+                    {
+                        "name":  "ClearMoveIgnoreComponents",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "ClearMoveIgnoreActors",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "CanCharacterStepUp",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Pawn",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "AllowHLODLevelsExclusion",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "AddVelocityChangeImpulseAtLocation",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Impulse",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Location",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddTorqueInRadians",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Torque",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bAccelChange",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddTorqueInDegrees",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Torque",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bAccelChange",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddRadialImpulse",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Origin",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Radius",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "Strength",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "Falloff",
+                                           "type":  "ByteProperty"
+                                       },
+                                       {
+                                           "name":  "bVelChange",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddRadialForce",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Origin",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Radius",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "Strength",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "Falloff",
+                                           "type":  "ByteProperty"
+                                       },
+                                       {
+                                           "name":  "bAccelChange",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddImpulseAtLocation",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Impulse",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Location",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddImpulse",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Impulse",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bVelChange",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddForceAtLocationLocal",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Force",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Location",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddForceAtLocation",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Force",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Location",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddForce",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Force",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bAccelChange",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddAngularImpulseInRadians",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Impulse",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bVelChange",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddAngularImpulseInDegrees",
+                        "owner":  "PrimitiveComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Impulse",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bVelChange",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ToggleVisibility",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bPropagateToChildren",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetWorldScale3D",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewScale",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetVisibility",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewVisibility",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bPropagateToChildren",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetShouldUpdatePhysicsVolume",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bInShouldUpdatePhysicsVolume",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetRelativeScale3D",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewScale3D",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetMobility",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewMobility",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetHiddenInGame",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewHidden",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bPropagateToChildren",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAbsolute",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewAbsoluteLocation",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bNewAbsoluteRotation",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bNewAbsoluteScale",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ResetRelativeTransform",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_Visibility",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "OldValue",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_Transform",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_AttachSocketName",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_AttachParent",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_AttachChildren",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetWorldTransform",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetWorldRotation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetWorldLocationAndRotation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "NewRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetWorldLocation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetRelativeTransform",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetRelativeRotation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetRelativeLocationAndRotation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "NewRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetRelativeLocation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_GetComponentToWorld",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "K2_GetComponentScale",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "K2_GetComponentRotation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "K2_GetComponentLocation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "K2_DetachFromComponent",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "LocationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "RotationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "ScaleRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "bCallModify",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AttachToComponent",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Parent",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "SocketName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "LocationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "RotationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "ScaleRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "bWeldSimulatedBodies",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_AttachTo",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InParent",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "InSocketName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "AttachType",
+                                           "type":  "ByteProperty"
+                                       },
+                                       {
+                                           "name":  "bWeldSimulatedBodies",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_AddWorldTransformKeepScale",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddWorldTransform",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddWorldRotation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddWorldOffset",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddRelativeRotation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddRelativeLocation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddLocalTransform",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddLocalRotation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddLocalOffset",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "IsVisible",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsSimulatingPhysics",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsGroupedComponentMovementEnabled",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsAnySimulatingPhysics",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetUpVector",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetSocketTransform",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InSocketName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "TransformSpace",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetSocketRotation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InSocketName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetSocketQuaternion",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InSocketName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetSocketLocation",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InSocketName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetShouldUpdatePhysicsVolume",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetRightVector",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetRelativeTransform",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetPhysicsVolume",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetParentComponents",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Parents",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetNumChildrenComponents",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "IntProperty"
+                    },
+                    {
+                        "name":  "GetForwardVector",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetComponentVelocity",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetChildrenComponents",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bIncludeAllDescendants",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "Children",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetChildComponent",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ChildIndex",
+                                           "type":  "IntProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetAttachSocketName",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "NameProperty"
+                    },
+                    {
+                        "name":  "GetAttachParent",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetAllSocketNames",
+                        "owner":  "SceneComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ArrayProperty"
+                    },
+                    {
+                        "name":  "DoesSocketExist",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "InSocketName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "DetachFromParent",
+                        "owner":  "SceneComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bMaintainWorldPosition",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bCallModify",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ToggleActive",
+                        "owner":  "ActorComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "SetTickGroup",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "NewTickGroup",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetTickableWhenPaused",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bTickableWhenPaused",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetIsReplicated",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "ShouldReplicate",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetComponentTickIntervalAndCooldown",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "TickInterval",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetComponentTickInterval",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "TickInterval",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetComponentTickEnabled",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bEnabled",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAutoActivate",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewAutoActivate",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetActive",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bNewActive",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bReset",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "RemoveTickPrerequisiteComponent",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "PrerequisiteComponent",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "RemoveTickPrerequisiteActor",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "PrerequisiteActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveTick",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaSeconds",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveEndPlay",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "EndPlayReason",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveBeginPlay",
+                        "owner":  "ActorComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveAsyncPhysicsTick",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaSeconds",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "SimSeconds",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_IsActive",
+                        "owner":  "ActorComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "K2_DestroyComponent",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Object",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "IsComponentTickEnabled",
+                        "owner":  "ActorComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsBeingDestroyed",
+                        "owner":  "ActorComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsActive",
+                        "owner":  "ActorComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetOwner",
+                        "owner":  "ActorComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetComponentTickInterval",
+                        "owner":  "ActorComponent",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "Deactivate",
+                        "owner":  "ActorComponent",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "ComponentHasTag",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "Tag",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "AddTickPrerequisiteComponent",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "PrerequisiteComponent",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddTickPrerequisiteActor",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "PrerequisiteActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "Activate",
+                        "owner":  "ActorComponent",
+                        "params":  [
+                                       {
+                                           "name":  "bReset",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ExecuteUbergraph",
+                        "owner":  "Object",
+                        "params":  [
+                                       {
+                                           "name":  "EntryPoint",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    }
+                ],
+    "super":  "MeshComponent"
+}

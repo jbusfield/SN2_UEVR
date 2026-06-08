@@ -1,0 +1,160 @@
+[
+    {
+        "query":  "PersistentLevel.BP_Scanner_C_",
+        "result":  {
+                       "count":  23,
+                       "results":  [
+                                       {
+                                           "address":  "0x198A7A43160",
+                                           "className":  "BP_Scanner_C",
+                                           "fullName":  "BP_Scanner_C /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701"
+                                       },
+                                       {
+                                           "address":  "0x1987D9906A0",
+                                           "className":  "StaticMeshComponent",
+                                           "fullName":  "StaticMeshComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.Mesh"
+                                       },
+                                       {
+                                           "address":  "0x198A0B54A50",
+                                           "className":  "VolumeTrackerComponent",
+                                           "fullName":  "VolumeTrackerComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.VolumeTrackerComponent"
+                                       },
+                                       {
+                                           "address":  "0x198857E5800",
+                                           "className":  "UWEChaosPhysicsController",
+                                           "fullName":  "UWEChaosPhysicsController /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.PhysicsController"
+                                       },
+                                       {
+                                           "address":  "0x1985DB84450",
+                                           "className":  "SkeletalMeshComponent",
+                                           "fullName":  "SkeletalMeshComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.EquippedMesh"
+                                       },
+                                       {
+                                           "address":  "0x19825972CC0",
+                                           "className":  "UWESaveComponent",
+                                           "fullName":  "UWESaveComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.SaveComponent"
+                                       },
+                                       {
+                                           "address":  "0x1987E4C0EB0",
+                                           "className":  "WidgetComponent",
+                                           "fullName":  "WidgetComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.HologramScreenBackground"
+                                       },
+                                       {
+                                           "address":  "0x1987E4C1600",
+                                           "className":  "WidgetComponent",
+                                           "fullName":  "WidgetComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.HologramScreenForeground"
+                                       },
+                                       {
+                                           "address":  "0x1987D990010",
+                                           "className":  "ABP_Scanner_C",
+                                           "fullName":  "ABP_Scanner_C /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.EquippedMesh.ABP_Scanner_C_2147473700"
+                                       },
+                                       {
+                                           "address":  "0x19899E43280",
+                                           "className":  "UWEAssetDataComponent",
+                                           "fullName":  "UWEAssetDataComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.UWEAssetData"
+                                       },
+                                       {
+                                           "address":  "0x198B7FBA300",
+                                           "className":  "UWEAssetUserData",
+                                           "fullName":  "UWEAssetUserData /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.UWEAssetData.UWEAssetUserData_0"
+                                       },
+                                       {
+                                           "address":  "0x1986A164ED0",
+                                           "className":  "BPC_ToolBatteryMesh_C",
+                                           "fullName":  "BPC_ToolBatteryMesh_C /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.BPC_ToolBatteryMesh"
+                                       },
+                                       {
+                                           "address":  "0x198DC3FB260",
+                                           "className":  "UWESaveHandle",
+                                           "fullName":  "UWESaveHandle /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.UWESaveHandle_2147473699"
+                                       },
+                                       {
+                                           "address":  "0x1985012A9F0",
+                                           "className":  "BodySetup",
+                                           "fullName":  "BodySetup /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.HologramScreenBackground.BodySetup_2147473698"
+                                       },
+                                       {
+                                           "address":  "0x1985012A6C0",
+                                           "className":  "BodySetup",
+                                           "fullName":  "BodySetup /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.HologramScreenForeground.BodySetup_2147473697"
+                                       },
+                                       {
+                                           "address":  "0x1985E16BC50",
+                                           "className":  "MaterialInstanceDynamic",
+                                           "fullName":  "MaterialInstanceDynamic /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.BPC_ToolBatteryMesh.MID_MI_Alterra_Emissive_Powered_01_2147473696"
+                                       },
+                                       {
+                                           "address":  "0x1980EC2A6F0",
+                                           "className":  "MaterialInstanceDynamic",
+                                           "fullName":  "MaterialInstanceDynamic /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.EquippedMesh.MID_MI_Scanner_01_2147473694"
+                                       },
+                                       {
+                                           "address":  "0x19862D31150",
+                                           "className":  "MaterialInstanceDynamic",
+                                           "fullName":  "MaterialInstanceDynamic /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.Mesh.MID_MI_Scanner_01_2147473693"
+                                       },
+                                       {
+                                           "address":  "0x19781F4FC70",
+                                           "className":  "MaterialInstanceDynamic",
+                                           "fullName":  "MaterialInstanceDynamic /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.Mesh.MID_MI_HardSurface_Emissive_Tools_2147473692"
+                                       },
+                                       {
+                                           "address":  "0x198B6909520",
+                                           "className":  "MaterialInstanceDynamic",
+                                           "fullName":  "MaterialInstanceDynamic /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.HologramScreenBackground.MID_M_UI_WidgetComponent_Translucent_TwoSided_NoExposure_2147473455"
+                                       },
+                                       {
+                                           "address":  "0x1989B5BE200",
+                                           "className":  "TextureRenderTarget2D",
+                                           "fullName":  "TextureRenderTarget2D /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.HologramScreenBackground.TextureRenderTarget2D_2147473454"
+                                       },
+                                       {
+                                           "address":  "0x198B6903160",
+                                           "className":  "MaterialInstanceDynamic",
+                                           "fullName":  "MaterialInstanceDynamic /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.HologramScreenForeground.MID_M_UI_WidgetComponent_Translucent_TwoSided_EmissiveBoost_2147473451"
+                                       },
+                                       {
+                                           "address":  "0x1989B5BDF00",
+                                           "className":  "TextureRenderTarget2D",
+                                           "fullName":  "TextureRenderTarget2D /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.HologramScreenForeground.TextureRenderTarget2D_2147473450"
+                                       }
+                                   ],
+                       "total_scanned":  253494
+                   }
+    },
+    {
+        "query":  "BP_Scanner_C EquippedMesh /Game/Maps/Main/L_Main.L_Main.PersistentLevel",
+        "result":  {
+                       "count":  0,
+                       "results":  [
+
+                                   ],
+                       "total_scanned":  253494
+                   }
+    },
+    {
+        "query":  "SkeletalMeshComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C",
+        "result":  {
+                       "count":  1,
+                       "results":  [
+                                       {
+                                           "address":  "0x1985DB84450",
+                                           "className":  "SkeletalMeshComponent",
+                                           "fullName":  "SkeletalMeshComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473701.EquippedMesh"
+                                       }
+                                   ],
+                       "total_scanned":  253494
+                   }
+    },
+    {
+        "query":  "EquippedMesh /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C",
+        "result":  {
+                       "count":  0,
+                       "results":  [
+
+                                   ],
+                       "total_scanned":  253494
+                   }
+    }
+]

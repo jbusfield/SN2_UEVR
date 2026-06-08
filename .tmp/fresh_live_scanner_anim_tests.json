@@ -1,0 +1,237 @@
+{
+    "baseline":  {
+                     "distance":  213.1728618870564,
+                     "sourceMesh":  "0x197A9218890",
+                     "equipped":  true,
+                     "primaryState":  false,
+                     "validSourceMesh":  true
+                 },
+    "original":  {
+                     "primaryState":  false,
+                     "equipped":  true,
+                     "sourceMesh":  "0x197A9218890",
+                     "validSourceMesh":  true
+                 },
+    "results":  [
+                    {
+                        "name":  "anim.field_valid_source_false",
+                        "after":  {
+                                      "distance":  38.379818232962862,
+                                      "sourceMesh":  "0x197A9218890",
+                                      "equipped":  true,
+                                      "primaryState":  false,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.79304365409354,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.368018075168678,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.field_source_mesh_null",
+                        "after":  {
+                                      "distance":  38.321657421268107,
+                                      "sourceMesh":  null,
+                                      "equipped":  true,
+                                      "primaryState":  false,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.8512044657883,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.316385949730588,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.method_set_mesh_driver_null",
+                        "after":  {
+                                      "distance":  38.348730046842775,
+                                      "sourceMesh":  null,
+                                      "equipped":  true,
+                                      "primaryState":  false,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.82413184021362,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.438683049673763,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.field_source_mesh_self",
+                        "after":  {
+                                      "distance":  38.410781465035484,
+                                      "sourceMesh":  "0x1985DB84450",
+                                      "equipped":  true,
+                                      "primaryState":  false,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.76208042202092,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.349959774568191,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.method_set_mesh_driver_self",
+                        "after":  {
+                                      "distance":  38.389632686574785,
+                                      "sourceMesh":  null,
+                                      "equipped":  true,
+                                      "primaryState":  false,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.78322920048163,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.322450025828431,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.field_equipped_false",
+                        "after":  {
+                                      "distance":  38.29510623005968,
+                                      "sourceMesh":  null,
+                                      "equipped":  false,
+                                      "primaryState":  false,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.87775565699673,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.327551868601638,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.field_primary_state_true",
+                        "after":  {
+                                      "distance":  38.314593583511815,
+                                      "sourceMesh":  null,
+                                      "equipped":  true,
+                                      "primaryState":  true,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.85826830354458,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.373735037779404,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.method_notify_primary_off",
+                        "after":  {
+                                      "distance":  38.345074031173112,
+                                      "sourceMesh":  null,
+                                      "equipped":  true,
+                                      "primaryState":  false,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.82778785588329,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.346776301554456,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.method_notify_primary_on",
+                        "after":  {
+                                      "distance":  38.355692248300777,
+                                      "sourceMesh":  null,
+                                      "equipped":  true,
+                                      "primaryState":  true,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.81716963875562,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.255853908230904,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.method_set_carry_actor_null",
+                        "after":  {
+                                      "distance":  38.26094852006208,
+                                      "sourceMesh":  null,
+                                      "equipped":  true,
+                                      "primaryState":  false,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.91191336699433,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.234736657351618,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.method_set_tool_energy_zero",
+                        "after":  {
+                                      "distance":  38.28106283730861,
+                                      "sourceMesh":  null,
+                                      "equipped":  true,
+                                      "primaryState":  false,
+                                      "validSourceMesh":  false
+                                  },
+                        "delta":  -174.89179904974779,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  38.2721729673622,
+                                        "sourceMesh":  null,
+                                        "equipped":  true,
+                                        "primaryState":  false,
+                                        "validSourceMesh":  false
+                                    }
+                    }
+                ]
+}

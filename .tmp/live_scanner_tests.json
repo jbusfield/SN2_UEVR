@@ -1,0 +1,318 @@
+{
+    "baseline":  {
+                     "distance":  108.71127790518329,
+                     "handLoc":  {
+                                     "x":  -331172.25,
+                                     "y":  427842.5,
+                                     "z":  -697.9560546875
+                                 },
+                     "gripWorld":  {
+                                       "x":  -331192.33284929395,
+                                       "y":  427818.4730505106,
+                                       "z":  -593.8526118709931
+                                   },
+                     "animationMode":  0,
+                     "animAddr":  "0x2BB6D98BE60",
+                     "bEnableAnimation":  false,
+                     "bPauseAnims":  true,
+                     "bAllowAnimCurveEvaluation":  true,
+                     "bDisablePostProcessBlueprint":  false
+                 },
+    "results":  [
+                    {
+                        "name":  "mesh.disable_anim_curves",
+                        "error":  "The term \u0027true\u0027 is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+                        "restoreError":  "The term \u0027false\u0027 is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+                    },
+                    {
+                        "name":  "mesh.disable_post_process",
+                        "error":  "The term \u0027true\u0027 is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+                        "restoreError":  "The term \u0027false\u0027 is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+                    },
+                    {
+                        "name":  "mesh.disallow_anim_curve_eval",
+                        "error":  "The term \u0027false\u0027 is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+                        "restoreError":  "The term \u0027true\u0027 is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+                    },
+                    {
+                        "name":  "mesh.force_reinit_same_mode",
+                        "after":  {
+                                      "distance":  108.64692974410018,
+                                      "handLoc":  {
+                                                      "x":  -331172.25,
+                                                      "y":  427842.34375,
+                                                      "z":  -696.6172485351563
+                                                  },
+                                      "gripWorld":  {
+                                                        "x":  -331198.3016591288,
+                                                        "y":  427820.3291942046,
+                                                        "z":  -593.4628703799519
+                                                    },
+                                      "animationMode":  0,
+                                      "animAddr":  "0x2BB6D98BE60",
+                                      "bEnableAnimation":  false,
+                                      "bPauseAnims":  true,
+                                      "bAllowAnimCurveEvaluation":  true,
+                                      "bDisablePostProcessBlueprint":  false
+                                  },
+                        "deltaFromBaseline":  -0.064348161083117361,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  108.57123704519732,
+                                        "handLoc":  {
+                                                        "x":  -331172.28125,
+                                                        "y":  427842.375,
+                                                        "z":  -697.6732788085938
+                                                    },
+                                        "gripWorld":  {
+                                                          "x":  -331200.21144450764,
+                                                          "y":  427821.4188549666,
+                                                          "z":  -594.8702743115068
+                                                      },
+                                        "animationMode":  0,
+                                        "animAddr":  null,
+                                        "bEnableAnimation":  false,
+                                        "bPauseAnims":  true,
+                                        "bAllowAnimCurveEvaluation":  true,
+                                        "bDisablePostProcessBlueprint":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.set_mesh_driver_null",
+                        "error":  "No anim instance available",
+                        "restoreError":  "No anim instance available"
+                    },
+                    {
+                        "name":  "anim.set_mesh_driver_hand_poseable",
+                        "error":  "No anim instance available",
+                        "restoreError":  "No anim instance available"
+                    },
+                    {
+                        "name":  "anim.field_valid_source_false",
+                        "error":  "No anim instance available",
+                        "restoreError":  "No anim instance available"
+                    },
+                    {
+                        "name":  "anim.field_source_mesh_null",
+                        "error":  "No anim instance available",
+                        "restoreError":  "No anim instance available"
+                    },
+                    {
+                        "name":  "anim.field_source_mesh_hand_poseable",
+                        "error":  "No anim instance available",
+                        "restoreError":  "No anim instance available"
+                    },
+                    {
+                        "name":  "anim.field_equipped_false",
+                        "error":  "No anim instance available",
+                        "restoreError":  "No anim instance available"
+                    },
+                    {
+                        "name":  "anim.field_primary_state_true",
+                        "error":  "No anim instance available",
+                        "restoreError":  "No anim instance available"
+                    },
+                    {
+                        "name":  "anim.notify_primary_off",
+                        "error":  "No anim instance available",
+                        "restore":  {
+                                        "distance":  108.60356477900896,
+                                        "handLoc":  {
+                                                        "x":  -331171.40625,
+                                                        "y":  427842.6875,
+                                                        "z":  -696.2474365234375
+                                                    },
+                                        "gripWorld":  {
+                                                          "x":  -331161.943369237,
+                                                          "y":  427802.40400188434,
+                                                          "z":  -595.8361425872514
+                                                      },
+                                        "animationMode":  0,
+                                        "animAddr":  null,
+                                        "bEnableAnimation":  false,
+                                        "bPauseAnims":  true,
+                                        "bAllowAnimCurveEvaluation":  true,
+                                        "bDisablePostProcessBlueprint":  false
+                                    }
+                    },
+                    {
+                        "name":  "anim.notify_primary_on",
+                        "error":  "No anim instance available",
+                        "restore":  {
+                                        "distance":  108.63803394688891,
+                                        "handLoc":  {
+                                                        "x":  -331171.34375,
+                                                        "y":  427842.53125,
+                                                        "z":  -697.700439453125
+                                                    },
+                                        "gripWorld":  {
+                                                          "x":  -331159.7466982084,
+                                                          "y":  427805.83696490136,
+                                                          "z":  -596.106836058581
+                                                      },
+                                        "animationMode":  0,
+                                        "animAddr":  null,
+                                        "bEnableAnimation":  false,
+                                        "bPauseAnims":  true,
+                                        "bAllowAnimCurveEvaluation":  true,
+                                        "bDisablePostProcessBlueprint":  false
+                                    }
+                    },
+                    {
+                        "name":  "mesh.unlink_anim_class_layers",
+                        "after":  {
+                                      "distance":  108.68993138030666,
+                                      "handLoc":  {
+                                                      "x":  -331171.40625,
+                                                      "y":  427842.5,
+                                                      "z":  -697.6641235351563
+                                                  },
+                                      "gripWorld":  {
+                                                        "x":  -331160.0097319702,
+                                                        "y":  427807.25101910706,
+                                                        "z":  -595.4822762908362
+                                                    },
+                                      "animationMode":  0,
+                                      "animAddr":  null,
+                                      "bEnableAnimation":  false,
+                                      "bPauseAnims":  true,
+                                      "bAllowAnimCurveEvaluation":  true,
+                                      "bDisablePostProcessBlueprint":  false
+                                  },
+                        "deltaFromBaseline":  -0.021346524876634021,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  108.72891937501697,
+                                        "handLoc":  {
+                                                        "x":  -331171.40625,
+                                                        "y":  427842.5625,
+                                                        "z":  -697.4458618164063
+                                                    },
+                                        "gripWorld":  {
+                                                          "x":  -331160.2738833402,
+                                                          "y":  427807.5189287916,
+                                                          "z":  -595.1228612839254
+                                                      },
+                                        "animationMode":  0,
+                                        "animAddr":  null,
+                                        "bEnableAnimation":  false,
+                                        "bPauseAnims":  true,
+                                        "bAllowAnimCurveEvaluation":  true,
+                                        "bDisablePostProcessBlueprint":  false
+                                    }
+                    },
+                    {
+                        "name":  "mesh.stop_montage_api",
+                        "error":  "The remote server returned an error: (500) Internal Server Error.",
+                        "restore":  {
+                                        "distance":  108.64854088358148,
+                                        "handLoc":  {
+                                                        "x":  -331171.5,
+                                                        "y":  427842.5,
+                                                        "z":  -696.43310546875
+                                                    },
+                                        "gripWorld":  {
+                                                          "x":  -331161.55221148743,
+                                                          "y":  427810.5765807594,
+                                                          "z":  -593.0578558011857
+                                                      },
+                                        "animationMode":  0,
+                                        "animAddr":  null,
+                                        "bEnableAnimation":  false,
+                                        "bPauseAnims":  true,
+                                        "bAllowAnimCurveEvaluation":  true,
+                                        "bDisablePostProcessBlueprint":  false
+                                    }
+                    },
+                    {
+                        "name":  "mesh.reset_dynamics",
+                        "after":  {
+                                      "distance":  108.62017169911779,
+                                      "handLoc":  {
+                                                      "x":  -331171.5,
+                                                      "y":  427842.53125,
+                                                      "z":  -696.544189453125
+                                                  },
+                                      "gripWorld":  {
+                                                        "x":  -331161.4386813238,
+                                                        "y":  427809.57287826424,
+                                                        "z":  -593.5351738332831
+                                                    },
+                                      "animationMode":  0,
+                                      "animAddr":  null,
+                                      "bEnableAnimation":  false,
+                                      "bPauseAnims":  true,
+                                      "bAllowAnimCurveEvaluation":  true,
+                                      "bDisablePostProcessBlueprint":  false
+                                  },
+                        "deltaFromBaseline":  -0.091106206065504125,
+                        "closerThanBaseline":  true,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  108.61207602210889,
+                                        "handLoc":  {
+                                                        "x":  -331171.4375,
+                                                        "y":  427842.5,
+                                                        "z":  -697.6073608398438
+                                                    },
+                                        "gripWorld":  {
+                                                          "x":  -331158.7253099811,
+                                                          "y":  427807.56641806994,
+                                                          "z":  -595.5552754310133
+                                                      },
+                                        "animationMode":  0,
+                                        "animAddr":  null,
+                                        "bEnableAnimation":  false,
+                                        "bPauseAnims":  true,
+                                        "bAllowAnimCurveEvaluation":  true,
+                                        "bDisablePostProcessBlueprint":  false
+                                    }
+                    },
+                    {
+                        "name":  "mesh.strong_reset_combo",
+                        "after":  {
+                                      "distance":  108.72989859220338,
+                                      "handLoc":  {
+                                                      "x":  -331171.53125,
+                                                      "y":  427842.53125,
+                                                      "z":  -697.7044677734375
+                                                  },
+                                      "gripWorld":  {
+                                                        "x":  -331161.57297905965,
+                                                        "y":  427815.38475483825,
+                                                        "z":  -592.8899101577017
+                                                    },
+                                      "animationMode":  0,
+                                      "animAddr":  null,
+                                      "bEnableAnimation":  false,
+                                      "bPauseAnims":  true,
+                                      "bAllowAnimCurveEvaluation":  true,
+                                      "bDisablePostProcessBlueprint":  false
+                                  },
+                        "deltaFromBaseline":  0.018620687020089122,
+                        "closerThanBaseline":  false,
+                        "closeThreshold30":  false,
+                        "restore":  {
+                                        "distance":  108.67687455144032,
+                                        "handLoc":  {
+                                                        "x":  -331171.625,
+                                                        "y":  427842.5,
+                                                        "z":  -696.4619750976563
+                                                    },
+                                        "gripWorld":  {
+                                                          "x":  -331163.8848041006,
+                                                          "y":  427817.64689049794,
+                                                          "z":  -590.9485855312734
+                                                      },
+                                        "animationMode":  0,
+                                        "animAddr":  null,
+                                        "bEnableAnimation":  false,
+                                        "bPauseAnims":  true,
+                                        "bAllowAnimCurveEvaluation":  true,
+                                        "bDisablePostProcessBlueprint":  false
+                                    }
+                    }
+                ]
+}

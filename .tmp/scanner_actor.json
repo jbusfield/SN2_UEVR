@@ -1,0 +1,2936 @@
+{
+    "address":  "0x2BBA547B3E0",
+    "className":  "BP_Scanner_C",
+    "fields":  {
+                   "AbilitySpecHandles":  [
+                                              {
+                                                  "Handle":  1161
+                                              },
+                                              {
+                                                  "Handle":  1162
+                                              },
+                                              {
+                                                  "Handle":  1163
+                                              }
+                                          ],
+                   "AllowAmmoLowCue":  false,
+                   "AmmoEmptyCue":  {
+                                        "TagName":  "GameplayCue.Battery.Empty"
+                                    },
+                   "AmmoLoadCue":  {
+                                       "TagName":  "GameplayCue.Battery.Load"
+                                   },
+                   "AmmoLowCue":  {
+                                      "TagName":  "GameplayCue.Battery.Low"
+                                  },
+                   "AmmoLowThreshold":  0.10000000149011612,
+                   "AmmoRefillCue":  {
+                                         "TagName":  "GameplayCue.Battery.Refill"
+                                     },
+                   "AmmoUnloadCue":  {
+                                         "TagName":  "GameplayCue.Battery.Unload"
+                                     },
+                   "AttachmentReplication":  {
+                                                 "AttachComponent":  null,
+                                                 "AttachParent":  null,
+                                                 "AttachSocket":  "None",
+                                                 "LocationOffset":  "\u003cstruct\u003e",
+                                                 "RelativeScale3D":  "\u003cstruct\u003e",
+                                                 "RotationOffset":  "\u003cstruct\u003e"
+                                             },
+                   "AutoPickupDisabled":  false,
+                   "AutoReceiveInput":  0,
+                   "BPC_ToolBatteryMesh":  {
+                                               "address":  "0x2BB6D98C4F0",
+                                               "className":  "BPC_ToolBatteryMesh_C",
+                                               "fullName":  "BPC_ToolBatteryMesh_C /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.BPC_ToolBatteryMesh"
+                                           },
+                   "BatteryItemId":  {
+                                         "A":  0,
+                                         "B":  0,
+                                         "C":  0,
+                                         "D":  0
+                                     },
+                   "BatteryType":  {
+                                       "address":  "0x2BB365D8860",
+                                       "className":  "UWEItemType",
+                                       "fullName":  "UWEItemType /Game/Data/ItemType/DA_BasicBattery_ItemType.DA_BasicBattery_ItemType"
+                                   },
+                   "BlueprintCreatedComponents":  [
+                                                      {
+                                                          "address":  "0x2BB48913B80",
+                                                          "className":  "UWEAssetDataComponent"
+                                                      },
+                                                      {
+                                                          "address":  "0x2BB6D98C4F0",
+                                                          "className":  "BPC_ToolBatteryMesh_C"
+                                                      }
+                                                  ],
+                   "Children":  [
+                                    {
+                                        "address":  "0x2BB64ABCCE0",
+                                        "className":  "GC_ScannerOnline_C"
+                                    }
+                                ],
+                   "CurrentWidget":  {
+                                         "address":  "0x2BBB63B95B0",
+                                         "className":  "WBP_ScannerTextPopup_C",
+                                         "fullName":  "WBP_ScannerTextPopup_C /Engine/Transient.GameEngine_2147482584.SN2GameInstance_2147482522.WBP_MainScreen_C_2147479169.WidgetTree_2147479168.WBP_ScannerTextPopup_C_2147317418"
+                                     },
+                   "CustomTimeDilation":  1.0,
+                   "DMI_EmissiveStrip":  {
+                                             "address":  "0x2BB5442A360",
+                                             "className":  "MaterialInstanceDynamic",
+                                             "fullName":  "MaterialInstanceDynamic /Engine/Transient.EmissvieStrip"
+                                         },
+                   "DefaultUpdateOverlapsMethodDuringLevelStreaming":  {
+                                                                           "enumType":  "EActorUpdateOverlapsMethod",
+                                                                           "value":  2
+                                                                       },
+                   "DesiredHologramScreenParentSocket":  "HologramFX",
+                   "DynamicMaterialInstances":  [
+                                                    {
+                                                        "address":  "0x2BB55D75170",
+                                                        "className":  "MaterialInstanceDynamic"
+                                                    },
+                                                    {
+                                                        "address":  "0x2BB5442A360",
+                                                        "className":  "MaterialInstanceDynamic"
+                                                    },
+                                                    {
+                                                        "address":  "0x2BB55D7CA90",
+                                                        "className":  "MaterialInstanceDynamic"
+                                                    },
+                                                    {
+                                                        "address":  "0x2BB84BFD540",
+                                                        "className":  "MaterialInstanceDynamic"
+                                                    }
+                                                ],
+                   "EmissiveSlotIndex":  1,
+                   "EnergyLevel":  100.0,
+                   "EquippedByActor":  {
+                                           "offset":  868,
+                                           "type":  "WeakObjectProperty"
+                                       },
+                   "EquippedMesh":  {
+                                        "address":  "0x2BA8D138890",
+                                        "className":  "SkeletalMeshComponent",
+                                        "fullName":  "SkeletalMeshComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.EquippedMesh"
+                                    },
+                   "HologramScreenBackground":  {
+                                                    "address":  "0x2BBB180A840",
+                                                    "className":  "WidgetComponent",
+                                                    "fullName":  "WidgetComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.HologramScreenBackground"
+                                                },
+                   "HologramScreenForeground":  {
+                                                    "address":  "0x2BBB1807510",
+                                                    "className":  "WidgetComponent",
+                                                    "fullName":  "WidgetComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.HologramScreenForeground"
+                                                },
+                   "InitialLifeSpan":  0.0,
+                   "InputComponent":  null,
+                   "InputPriority":  0,
+                   "InstanceComponents":  [
+
+                                          ],
+                   "Instigator":  null,
+                   "ItemPickupCooldown":  0.5,
+                   "ItemType":  {
+                                    "address":  "0x2BB255B41B0",
+                                    "className":  "UWEItemType",
+                                    "fullName":  "UWEItemType /Game/Data/ItemType/Tools/DA_Scanner_ItemType.DA_Scanner_ItemType"
+                                },
+                   "Layers":  [
+
+                              ],
+                   "MagnetActor":  {
+                                       "offset":  916,
+                                       "type":  "WeakObjectProperty"
+                                   },
+                   "MagnetismMinDistance":  0.0,
+                   "MaxEnergyLevel":  100.0,
+                   "Mesh":  {
+                                "address":  "0x2BB6D98B7D0",
+                                "className":  "StaticMeshComponent",
+                                "fullName":  "StaticMeshComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.Mesh"
+                            },
+                   "MinNetUpdateFrequency":  2.0,
+                   "NetCullDistanceSquared":  225000000.0,
+                   "NetDormancy":  1,
+                   "NetDriverName":  "GameNetDriver",
+                   "NetPriority":  1.0,
+                   "NetTag":  0,
+                   "NetUpdateFrequency":  20.0,
+                   "OnActorBeginOverlap":  {
+                                               "type":  "MulticastSparseDelegateProperty"
+                                           },
+                   "OnActorEndOverlap":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnActorHit":  {
+                                      "type":  "MulticastSparseDelegateProperty"
+                                  },
+                   "OnAmmoLoaded":  {
+                                        "type":  "MulticastInlineDelegateProperty"
+                                    },
+                   "OnAmmoReleased":  {
+                                          "type":  "MulticastInlineDelegateProperty"
+                                      },
+                   "OnBeginCursorOver":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnClicked":  {
+                                     "type":  "MulticastSparseDelegateProperty"
+                                 },
+                   "OnDestroyed":  {
+                                       "type":  "MulticastSparseDelegateProperty"
+                                   },
+                   "OnDroppedDelegate":  {
+                                             "type":  "MulticastInlineDelegateProperty"
+                                         },
+                   "OnEndCursorOver":  {
+                                           "type":  "MulticastSparseDelegateProperty"
+                                       },
+                   "OnEndPlay":  {
+                                     "type":  "MulticastSparseDelegateProperty"
+                                 },
+                   "OnEnergyChanged":  {
+                                           "type":  "MulticastInlineDelegateProperty"
+                                       },
+                   "OnEnergyEmpty":  {
+                                         "type":  "MulticastInlineDelegateProperty"
+                                     },
+                   "OnEnergyRefilled":  {
+                                            "type":  "MulticastInlineDelegateProperty"
+                                        },
+                   "OnEquippedDelegate":  {
+                                              "type":  "MulticastInlineDelegateProperty"
+                                          },
+                   "OnHolsteredDelegate":  {
+                                               "type":  "MulticastInlineDelegateProperty"
+                                           },
+                   "OnHolsteringDelegate":  {
+                                                "type":  "MulticastInlineDelegateProperty"
+                                            },
+                   "OnInputTouchBegin":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnInputTouchEnd":  {
+                                           "type":  "MulticastSparseDelegateProperty"
+                                       },
+                   "OnInputTouchEnter":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnInputTouchLeave":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnPostPickupItem":  {
+                                            "type":  "MulticastInlineDelegateProperty"
+                                        },
+                   "OnReleased":  {
+                                      "type":  "MulticastSparseDelegateProperty"
+                                  },
+                   "OnSetLifeSpanDelegate":  {
+                                                 "type":  "MulticastInlineDelegateProperty"
+                                             },
+                   "OnTakeAnyDamage":  {
+                                           "type":  "MulticastSparseDelegateProperty"
+                                       },
+                   "OnTakePointDamage":  {
+                                             "type":  "MulticastSparseDelegateProperty"
+                                         },
+                   "OnTakeRadialDamage":  {
+                                              "type":  "MulticastSparseDelegateProperty"
+                                          },
+                   "OnUnequippedDelegate":  {
+                                                "type":  "MulticastInlineDelegateProperty"
+                                            },
+                   "OnlineCueTag":  {
+                                        "TagName":  "GameplayCue.Tools.Scanner.Online"
+                                    },
+                   "Owner":  {
+                                 "address":  "0x2BB7AEEB050",
+                                 "className":  "BP_Character_01_C",
+                                 "fullName":  "BP_Character_01_C /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Character_01_C_2147479793"
+                             },
+                   "ParentComponent":  {
+                                           "offset":  480,
+                                           "type":  "WeakObjectProperty"
+                                       },
+                   "PhysicsController":  {
+                                             "address":  "0x2BB71FB8B00",
+                                             "className":  "UWEChaosPhysicsController",
+                                             "fullName":  "UWEChaosPhysicsController /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.PhysicsController"
+                                         },
+                   "PhysicsReplicationMode":  {
+                                                  "enumType":  "EPhysicsReplicationMode",
+                                                  "value":  1
+                                              },
+                   "PickupDisabled":  false,
+                   "PrimaryActorTick":  {
+
+                                        },
+                   "RayTracingGroupId":  -1,
+                   "RemoteRole":  1,
+                   "ReplicatedMovement":  {
+                                              "Acceleration":  "\u003cstruct\u003e",
+                                              "AngularVelocity":  "\u003cstruct\u003e",
+                                              "LinearVelocity":  "\u003cstruct\u003e",
+                                              "Location":  "\u003cstruct\u003e",
+                                              "LocationQuantizationLevel":  {
+                                                                                "enumType":  "EVectorQuantization",
+                                                                                "value":  0
+                                                                            },
+                                              "Rotation":  "\u003cstruct\u003e",
+                                              "RotationQuantizationLevel":  {
+                                                                                "enumType":  "ERotatorQuantization",
+                                                                                "value":  0
+                                                                            },
+                                              "ServerFrame":  0,
+                                              "ServerPhysicsHandle":  -1,
+                                              "VelocityQuantizationLevel":  {
+                                                                                "enumType":  "EVectorQuantization",
+                                                                                "value":  0
+                                                                            },
+                                              "bRepAcceleration":  false,
+                                              "bRepPhysics":  false,
+                                              "bSimulatedPhysicSleep":  false
+                                          },
+                   "RequiredBatteries":  [
+                                             {
+                                                 "ItemType":  {
+                                                                  "offset":  0,
+                                                                  "type":  "SoftObjectProperty"
+                                                              },
+                                                 "Mesh":  {
+                                                              "offset":  40,
+                                                              "type":  "SoftObjectProperty"
+                                                          }
+                                             },
+                                             {
+                                                 "ItemType":  {
+                                                                  "offset":  0,
+                                                                  "type":  "SoftObjectProperty"
+                                                              },
+                                                 "Mesh":  {
+                                                              "offset":  40,
+                                                              "type":  "SoftObjectProperty"
+                                                          }
+                                             }
+                                         ],
+                   "Role":  3,
+                   "RootComponent":  {
+                                         "address":  "0x2BB6D98B7D0",
+                                         "className":  "StaticMeshComponent",
+                                         "fullName":  "StaticMeshComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.Mesh"
+                                     },
+                   "SaveComponent":  {
+                                         "address":  "0x2BB8196AEC0",
+                                         "className":  "UWESaveComponent",
+                                         "fullName":  "UWESaveComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.SaveComponent"
+                                     },
+                   "SpawnCollisionHandlingMethod":  {
+                                                        "enumType":  "ESpawnActorCollisionHandlingMethod",
+                                                        "value":  1
+                                                    },
+                   "Tags":  {
+                                "count":  1,
+                                "innerType":  "NameProperty",
+                                "type":  "array"
+                            },
+                   "UWEAssetData":  {
+                                        "address":  "0x2BB48913B80",
+                                        "className":  "UWEAssetDataComponent",
+                                        "fullName":  "UWEAssetDataComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.UWEAssetData"
+                                    },
+                   "UWEItemMagnetismDistance":  50.0,
+                   "UWEItemMagnetismInterpSpeed":  6.0,
+                   "UWEItemMagnetismRemoteClientDelay":  0.30000001192092896,
+                   "UWEItemMaxAutoPickupTime":  1.0,
+                   "UberGraphFrame":  {
+
+                                      },
+                   "UpdateOverlapsMethodDuringLevelStreaming":  {
+                                                                    "enumType":  "EActorUpdateOverlapsMethod",
+                                                                    "value":  0
+                                                                },
+                   "VolumeTrackerComponent":  {
+                                                  "address":  "0x2BB46D634F0",
+                                                  "className":  "VolumeTrackerComponent",
+                                                  "fullName":  "VolumeTrackerComponent /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457.VolumeTrackerComponent"
+                                              },
+                   "WidgetClass":  {
+                                       "offset":  976,
+                                       "type":  "SoftClassProperty"
+                                   },
+                   "bActorEnableCollision":  false,
+                   "bActorIsBeingDestroyed":  false,
+                   "bAllowReceiveTickEventOnDedicatedServer":  true,
+                   "bAllowTickBeforeBeginPlay":  false,
+                   "bAlwaysRelevant":  false,
+                   "bAsyncPhysicsTickEnabled":  false,
+                   "bAutoDestroyWhenFinished":  false,
+                   "bBlockInput":  false,
+                   "bCallPreReplication":  true,
+                   "bCallPreReplicationForReplay":  true,
+                   "bCanBeDamaged":  true,
+                   "bCanBeInCluster":  false,
+                   "bCanShowReloadPrompt":  true,
+                   "bCollideWhenPlacing":  false,
+                   "bEnableAutoLODGeneration":  false,
+                   "bEquippableHasBeenPickedUp":  false,
+                   "bExchangedRoles":  true,
+                   "bFindCameraComponentWhenViewTarget":  true,
+                   "bForceNetAddressable":  false,
+                   "bGenerateOverlapEventsDuringLevelStreaming":  false,
+                   "bHasBeenPickedUp":  false,
+                   "bHidden":  false,
+                   "bIgnoresOriginShifting":  false,
+                   "bIsEditorOnlyActor":  false,
+                   "bNetLoadOnClient":  true,
+                   "bNetTemporary":  false,
+                   "bNetUseOwnerRelevancy":  false,
+                   "bOnlyRelevantToOwner":  false,
+                   "bRelevantForLevelBounds":  true,
+                   "bRelevantForNetworkReplays":  true,
+                   "bReplayRewindable":  false,
+                   "bReplicateMovement":  true,
+                   "bReplicateUsingRegisteredSubObjectList":  false,
+                   "bReplicatedCollisionEnabled":  false,
+                   "bReplicatedSimulatePhysics":  false,
+                   "bReplicates":  true,
+                   "bTearOff":  false
+               },
+    "fullName":  "BP_Scanner_C /Game/Maps/Main/L_Main.L_Main.PersistentLevel.BP_Scanner_C_2147473457",
+    "methods":  [
+                    {
+                        "name":  "ReceiveBeginPlay",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "UpdateScannerOnlineCue",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "Equipped",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "Unequipped",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "AmmoLoaded",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "AmmoReleased",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "EnergyEmpty",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "EnergyRefilled",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "EnergyChanged",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+                                       {
+                                           "name":  "PercentEnergy",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "BPOnEquipVisibilityChanged",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+                                       {
+                                           "name":  "bNewVisible",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ExecuteUbergraph_BP_Scanner",
+                        "owner":  "BP_Scanner_C",
+                        "params":  [
+                                       {
+                                           "name":  "EntryPoint",
+                                           "type":  "IntProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_CreateDelegate_OutputDelegate",
+                                           "type":  "DelegateProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_CreateDelegate_OutputDelegate_1",
+                                           "type":  "DelegateProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_CreateDelegate_OutputDelegate_2",
+                                           "type":  "DelegateProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_CreateDelegate_OutputDelegate_3",
+                                           "type":  "DelegateProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_CreateDelegate_OutputDelegate_4",
+                                           "type":  "DelegateProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_CreateDelegate_OutputDelegate_5",
+                                           "type":  "DelegateProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_GetOwner_ReturnValue",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_MakeGameplayCueParameters_ReturnValue",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_GetWidget_ReturnValue",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_GetWidget_ReturnValue_1",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_DynamicCast_AsWBP_Scanner_Tool_Hologram_Foreground",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_DynamicCast_bSuccess",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_DynamicCast_AsWBP_Scanner_Tool_Hologram_Foreground_1",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_DynamicCast_bSuccess_1",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_GetMaterial_ReturnValue",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_IsEquipped_ReturnValue",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_IsValid_ReturnValue",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_CreateDynamicMaterialInstance_ReturnValue",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_HasEnergy_ReturnValue",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_GetBatteryType_ReturnValue",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "CallFunc_IsValid_ReturnValue_1",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_CreateDelegate_OutputDelegate_6",
+                                           "type":  "DelegateProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_CustomEvent_PercentEnergy",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "K2Node_Event_bNewVisible",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetEnergyLevel",
+                        "owner":  "UWEEnergyTool",
+                        "params":  [
+                                       {
+                                           "name":  "InEnergyLevel",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_MaxEnergyLevel",
+                        "owner":  "UWEEnergyTool",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_EnergyLevel",
+                        "owner":  "UWEEnergyTool",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_BatteryType",
+                        "owner":  "UWEEnergyTool",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnEnergyRefilledCallback",
+                        "owner":  "UWEEnergyTool",
+                        "params":  [
+                                       {
+                                           "name":  "Who",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "OnEnergyEmptyCallback",
+                        "owner":  "UWEEnergyTool",
+                        "params":  [
+                                       {
+                                           "name":  "Who",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "OnEnergyChangedCallback",
+                        "owner":  "UWEEnergyTool",
+                        "params":  [
+                                       {
+                                           "name":  "Who",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "HasEnergy",
+                        "owner":  "UWEEnergyTool",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "SetAmmoCount",
+                        "owner":  "UWEBaseTool",
+                        "params":  [
+                                       {
+                                           "name":  "InCurrentAmmo",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "InMaxAmmo",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "HasAmmo",
+                        "owner":  "UWEBaseTool",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetRequiredAmmoTags",
+                        "owner":  "UWEBaseTool",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetHoldingPlayer",
+                        "owner":  "UWEBaseTool",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetAmmoType",
+                        "owner":  "UWEBaseTool",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetAmmoPercent",
+                        "owner":  "UWEBaseTool",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "RestoreEquipmentWidget",
+                        "owner":  "UWEBaseEquippable",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "IsLocallyEquipped",
+                        "owner":  "UWEBaseEquippable",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsHiddenInToolbar",
+                        "owner":  "UWEBaseEquippable",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "HideEquipmentWidget",
+                        "owner":  "UWEBaseEquippable",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "GetSlotSocketName",
+                        "owner":  "UWEBaseEquippable",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "NameProperty"
+                    },
+                    {
+                        "name":  "GetPlayerAbilitySystemComponent",
+                        "owner":  "UWEBaseEquippable",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetEquippableItemType",
+                        "owner":  "UWEBaseEquippable",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "ThrowForward",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "ThrowingActor",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "Direction",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Magnitude",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "StopSimulateMagnetism",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "SimulateMagnetism",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "ToActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetReplicatedSimulatePhysics",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "bNewSimulatePhysics",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetReplicatedCollisionEnabled",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "bNewCollisionEnabled",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetDropped",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_ReplicatedSimlatePhysics",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_ReplicatedCollisionEnabled",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnPhysicsWake",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "SleepingComponent",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "OnPhysicsSleep",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "SleepingComponent",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "NetMulticast_SetPhysicsEnabled",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "Enabled",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "ForceToSleep",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "NetMulticast_SetCollisionResponse",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "Channel",
+                                           "type":  "ByteProperty"
+                                       },
+                                       {
+                                           "name":  "NewResponse",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "IsOwned",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsEquippedByLocalPawn",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsEquipped",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "HasMagnet",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetEquippedMesh",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetDefaultCueParams",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetCharacterMesh",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetAttachTarget",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "Actor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "ExecuteItemGameplayCue_NonReplicated",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "Tag",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "BPOnUnequipped",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "OldEquippedByActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "BPOnHolstered",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "OldEquippedByActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "BPOnEquipVisibilityChanged",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "bNewVisible",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "BPOnEquipped",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "bFirstEquip",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddImpulseAwayRandom",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "FromActor",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "SpawnImpulse",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddImpulseAway",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "FromActor",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "SpawnImpulse",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddImpulse",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "Impulse",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Normalized",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddExternalInfluence",
+                        "owner":  "UWEBaseItem",
+                        "params":  [
+                                       {
+                                           "name":  "InfluenceType",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "Value",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "WasRecentlyRendered",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Tolerance",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "UserConstructionScript",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "UnregisterAsFocalPointInPhysicsReplicationLOD",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "TearOff",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "SetTickGroup",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewTickGroup",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetTickableWhenPaused",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "bTickableWhenPaused",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetReplicates",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "bInReplicates",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetReplicateMovement",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "bInReplicateMovement",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetRayTracingGroupId",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "InRaytracingGroupId",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetPhysicsReplicationMode",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "ReplicationMode",
+                                           "type":  "EnumProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetOwner",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewOwner",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetNetUpdateFrequency",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Frequency",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetNetDormancy",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewDormancy",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetNetCullDistanceSquared",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DistanceSq",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetMinNetUpdateFrequency",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "MinFrequency",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetLifeSpan",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "InLifespan",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetAutoDestroyWhenFinished",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "bVal",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetActorTickInterval",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "TickInterval",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetActorTickEnabled",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "bEnabled",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetActorScale3D",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewScale3D",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetActorRelativeScale3D",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewRelativeScale",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetActorHiddenInGame",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "bNewHidden",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "SetActorEnableCollision",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "bNewActorEnableCollision",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "RemoveTickPrerequisiteComponent",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "PrerequisiteComponent",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "RemoveTickPrerequisiteActor",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "PrerequisiteActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "RegisterAsFocalPointInPhysicsReplicationLOD",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveTick",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaSeconds",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveRadialDamage",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DamageReceived",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "DamageType",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "Origin",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "HitInfo",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "InstigatedBy",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "DamageCauser",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceivePointDamage",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Damage",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "DamageType",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "HitLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "HitNormal",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "HitComponent",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "BoneName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "ShotFromDirection",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "InstigatedBy",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "DamageCauser",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "HitInfo",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveHit",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "MyComp",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "Other",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "OtherComp",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "bSelfMoved",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "HitLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "HitNormal",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "NormalImpulse",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "Hit",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveEndPlay",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "EndPlayReason",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveDestroyed",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveBeginPlay",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveAsyncPhysicsTick",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaSeconds",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "SimSeconds",
+                                           "type":  "FloatProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveAnyDamage",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Damage",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "DamageType",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "InstigatedBy",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "DamageCauser",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorOnReleased",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "ButtonReleased",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorOnInputTouchLeave",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "FingerIndex",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorOnInputTouchEnter",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "FingerIndex",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorOnInputTouchEnd",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "FingerIndex",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorOnInputTouchBegin",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "FingerIndex",
+                                           "type":  "ByteProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorOnClicked",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "ButtonPressed",
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorEndOverlap",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OtherActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorEndCursorOver",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorBeginOverlap",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OtherActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ReceiveActorBeginCursorOver",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "PrestreamTextures",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Seconds",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "bEnableStreaming",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "CinematicTextureGroups",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_ReplicateMovement",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_ReplicatedMovement",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_Owner",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_Instigator",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "OnRep_AttachmentReplication",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "MakeNoise",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Loudness",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "NoiseInstigator",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "NoiseLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "MaxRange",
+                                           "type":  "FloatProperty"
+                                       },
+                                       {
+                                           "name":  "Tag",
+                                           "type":  "NameProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_TeleportTo",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DestLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "DestRotation",
+                                           "type":  "StructProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_SetActorTransform",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_SetActorRotation",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleportPhysics",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_SetActorRelativeTransform",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewRelativeTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetActorRelativeRotation",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewRelativeRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetActorRelativeLocation",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewRelativeLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_SetActorLocationAndRotation",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "NewRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_SetActorLocation",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_OnReset",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "K2_OnEndViewTarget",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "PC",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_OnBecomeViewTarget",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "PC",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_GetRootComponent",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "K2_GetComponentsByClass",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "ComponentClass",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "ArrayProperty"
+                    },
+                    {
+                        "name":  "K2_GetActorRotation",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "K2_GetActorLocation",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "K2_DetachFromActor",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "LocationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "RotationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "ScaleRule",
+                                           "type":  "EnumProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_DestroyActor",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AttachToComponent",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Parent",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "SocketName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "LocationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "RotationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "ScaleRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "bWeldSimulatedBodies",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_AttachToActor",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "ParentActor",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "SocketName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "LocationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "RotationRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "ScaleRule",
+                                           "type":  "EnumProperty"
+                                       },
+                                       {
+                                           "name":  "bWeldSimulatedBodies",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "K2_AttachRootComponentToActor",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "InParentActor",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "InSocketName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "AttachLocationType",
+                                           "type":  "ByteProperty"
+                                       },
+                                       {
+                                           "name":  "bWeldSimulatedBodies",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AttachRootComponentTo",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "InParent",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "InSocketName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "AttachLocationType",
+                                           "type":  "ByteProperty"
+                                       },
+                                       {
+                                           "name":  "bWeldSimulatedBodies",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddActorWorldTransformKeepScale",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddActorWorldTransform",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddActorWorldRotation",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddActorWorldOffset",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddActorLocalTransform",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "NewTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddActorLocalRotation",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaRotation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "K2_AddActorLocalOffset",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "DeltaLocation",
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bSweep",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "SweepHitResult",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bTeleport",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "IsOverlappingActor",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Other",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsChildActor",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsActorTickEnabled",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "IsActorBeingDestroyed",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "HasAuthority",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetVerticalDistanceTo",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OtherActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetVelocity",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetTransform",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetTickableWhenPaused",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetSquaredHorizontalDistanceTo",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OtherActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetSquaredDistanceTo",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OtherActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetResimulationThreshold",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetRemoteRole",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ByteProperty"
+                    },
+                    {
+                        "name":  "GetRayTracingGroupId",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "IntProperty"
+                    },
+                    {
+                        "name":  "GetPhysicsReplicationMode",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "EnumProperty"
+                    },
+                    {
+                        "name":  "GetParentComponent",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetParentActor",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetOwner",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetOverlappingComponents",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OverlappingComponents",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetOverlappingActors",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OverlappingActors",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       },
+                                       {
+                                           "name":  "ClassFilter",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetNetUpdateFrequency",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetNetCullDistanceSquared",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetMinNetUpdateFrequency",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetLocalRole",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ByteProperty"
+                    },
+                    {
+                        "name":  "GetLifeSpan",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetLevelTransform",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetLevel",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetInstigatorController",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetInstigator",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetInputVectorAxisValue",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "InputAxisKey",
+                                           "type":  "StructProperty"
+                                       }
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetInputAxisValue",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "InputAxisName",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetInputAxisKeyValue",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "InputAxisKey",
+                                           "type":  "StructProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetHorizontalDotProductTo",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OtherActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetHorizontalDistanceTo",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OtherActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetGameTimeSinceCreation",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetDotProductTo",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OtherActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetDistanceTo",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OtherActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetComponentsByTag",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "ComponentClass",
+                                           "type":  "ClassProperty"
+                                       },
+                                       {
+                                           "name":  "Tag",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "ArrayProperty"
+                    },
+                    {
+                        "name":  "GetComponentsByInterface",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Interface",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "ArrayProperty"
+                    },
+                    {
+                        "name":  "GetComponentByClass",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "ComponentClass",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetAttachParentSocketName",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "NameProperty"
+                    },
+                    {
+                        "name":  "GetAttachParentActor",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "GetAttachedActors",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OutActors",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       },
+                                       {
+                                           "name":  "bResetArray",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "bRecursivelyIncludeAttachedActors",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetAllChildActors",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "ChildActors",
+                                           "out":  true,
+                                           "type":  "ArrayProperty"
+                                       },
+                                       {
+                                           "name":  "bIncludeDescendants",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetActorUpVector",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetActorTimeDilation",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetActorTickInterval",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "FloatProperty"
+                    },
+                    {
+                        "name":  "GetActorScale3D",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetActorRightVector",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetActorRelativeScale3D",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetActorForwardVector",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "StructProperty"
+                    },
+                    {
+                        "name":  "GetActorEyesViewPoint",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "OutLocation",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "OutRotation",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "GetActorEnableCollision",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "GetActorBounds",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "bOnlyCollidingComponents",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "Origin",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "BoxExtent",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bIncludeFromChildActors",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ForceNetUpdate",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "FlushNetDormancy",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "FinishAddComponent",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Component",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "bManualAttachment",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "RelativeTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "FindComponentByTag",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "ComponentClass",
+                                           "type":  "ClassProperty"
+                                       },
+                                       {
+                                           "name":  "Tag",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "EnableInput",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "PlayerController",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "DisableInput",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "PlayerController",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "DetachRootComponentFromParent",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "bMaintainWorldPosition",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "CreateInputComponent",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "InputComponentToCreate",
+                                           "type":  "ClassProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "CanTriggerResimulation",
+                        "owner":  "Actor",
+                        "params":  [
+
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "AddTickPrerequisiteComponent",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "PrerequisiteComponent",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddTickPrerequisiteActor",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "PrerequisiteActor",
+                                           "type":  "ObjectProperty"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "AddComponentByClass",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Class",
+                                           "type":  "ClassProperty"
+                                       },
+                                       {
+                                           "name":  "bManualAttachment",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "RelativeTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "bDeferredFinish",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "AddComponent",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "TemplateName",
+                                           "type":  "NameProperty"
+                                       },
+                                       {
+                                           "name":  "bManualAttachment",
+                                           "type":  "BoolProperty"
+                                       },
+                                       {
+                                           "name":  "RelativeTransform",
+                                           "out":  true,
+                                           "type":  "StructProperty"
+                                       },
+                                       {
+                                           "name":  "ComponentTemplateContext",
+                                           "type":  "ObjectProperty"
+                                       },
+                                       {
+                                           "name":  "bDeferredFinish",
+                                           "type":  "BoolProperty"
+                                       }
+                                   ],
+                        "returnType":  "ObjectProperty"
+                    },
+                    {
+                        "name":  "ActorHasTag",
+                        "owner":  "Actor",
+                        "params":  [
+                                       {
+                                           "name":  "Tag",
+                                           "type":  "NameProperty"
+                                       }
+                                   ],
+                        "returnType":  "BoolProperty"
+                    },
+                    {
+                        "name":  "ExecuteUbergraph",
+                        "owner":  "Object",
+                        "params":  [
+                                       {
+                                           "name":  "EntryPoint",
+                                           "type":  "IntProperty"
+                                       }
+                                   ]
+                    }
+                ],
+    "super":  "UWEEnergyTool"
+}
