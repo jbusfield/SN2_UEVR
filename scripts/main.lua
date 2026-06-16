@@ -46,7 +46,7 @@ local HandsType = {
 	-- IKArms = 3,
 }
 
-local versionTxt = "v1.0.0"
+local versionTxt = "v1.0.2"
 local title = "Subnautica 2, First Person Mod " .. versionTxt
 local configDefinition = {
 	{
@@ -72,12 +72,12 @@ local configDefinition = {
                     selections = {"Forearms", "IK Arms"},
                     initialValue = 1,
                 },
-                {
-					widgetType = "checkbox",
-					id = "enable_fog",
-					label = "Enable Fog",
-					initialValue = false
-				},
+                -- {
+				-- 	widgetType = "checkbox",
+				-- 	id = "enable_fog",
+				-- 	label = "Enable Fog",
+				-- 	initialValue = true
+				-- },
                 {
 					widgetType = "checkbox",
 					id = "physical_driving",
@@ -123,6 +123,41 @@ local configDefinition = {
 			-- 	expandArray(reticule.getConfigurationWidgets,{{id="uevr_reticule_eye_dominance",isHidden=true},{id="uevr_reticule_eye_dominance_offset",isHidden=true}}),
 			-- { widgetType = "end_rect", additionalSize = 12, rounding = 5 }, { widgetType = "unindent", width = 20 },
 			-- { widgetType = "new_line" },
+			{
+				widgetType = "tree_node",
+				id = "advanced_settings",
+				initialOpen = false,
+				label = "Advanced"
+			},
+                {
+					widgetType = "checkbox",
+					id = "disable_reflections",
+					label = "Disable Reflections",
+					initialValue = false
+				},
+				{ widgetType = "indent", width = 20 },
+				{
+					widgetType = "text",
+					id = "disable_reflections_info",
+					wrapped = true,
+					label = "Disabling reflections can fix small mismatches between the right and left eyes that can annoy some users. Disabling reflections however, can have a small FPS penalty.",
+				},
+				{ widgetType = "unindent", width = 20 },
+                {
+					widgetType = "checkbox",
+					id = "disable_post_process_materials",
+					label = "Disable Post Process Materials",
+					initialValue = true
+				},
+				{ widgetType = "indent", width = 20 },
+				{
+					widgetType = "text",
+					id = "disable_post_process_materials_info",
+					wrapped = true,
+					label = "Disabling post process materials can boost FPS.",
+				},
+				{ widgetType = "unindent", width = 20 },
+			{ widgetType = "tree_pop" }
 
 		}
 	}
@@ -680,9 +715,70 @@ configui.onCreateOrUpdate("enable_fog", function(value)
 	enableFog(value)
 end)
 
+configui.onCreateOrUpdate("disable_reflections", function(value)
+	uevrUtils.set_cvar_int("r.Lumen.Reflections.Allow",  value and 1 or 0)
+end)
+configui.onCreateOrUpdate("disable_post_process_materials", function(value)
+	uevrUtils.set_cvar_int("r.postprocessing.disablematerials",  value and 1 or 0)
+end)
+
 configui.onCreateOrUpdate("physical_driving", function(value)
 	configui.setHidden("physical_driving_info", not value)
 end)
 
 configui.create(configDefinition)
 
+local cvarDefaults = nil
+local cvarOptimizations = {
+	-- ["r.MotionBlur.Max"] = 0,
+	-- ["r.MotionBlurQuality"] = 0,
+	-- ["r.DefaultFeature.MotionBlur"] = 0,
+	-- ["r.LightCulling.Quality"] = 0,
+	-- ["r.SceneColorFringe.Max"] = 0,
+	-- ["r.SceneColorFringeQuality"] = 0,
+	-- ["r.Tonemapper.GrainQuantization"] = 0,
+	-- ["r.FilmGrain"] = 0,
+	-- ["r.FinishCurrentFrame"] = 0,
+	-- ["r.SSFS"] = 0,
+	-- ["r.Bloom"] = 0,
+	-- ["r.Bloom.Quality"] = 0,
+	["r.Lumen.Reflections.Temporal"] = 0,
+	["r.Lumen.Reflections.Allow"] = 1,
+	["r.postprocessing.disablematerials"] = 1
+}
+local function enableCVarOptimizations(optimize)
+	if cvarDefaults == nil then
+		cvarDefaults = {}
+		for k, v in pairs(cvarOptimizations) do
+			cvarDefaults[k] = uevrUtils.get_cvar_int(k)
+		end
+	end
+
+	print("-- CVAR settings before swap --")
+	for k, v in pairs(cvarOptimizations) do
+		print(k, uevrUtils.get_cvar_int(k))
+	end
+
+	if optimize then
+		for k, v in pairs(cvarOptimizations) do
+			uevrUtils.set_cvar_int(k, v)
+		end
+	else
+		for k, v in pairs(cvarDefaults) do
+			uevrUtils.set_cvar_int(k,  cvarDefaults[k])
+		end
+	end
+
+	print("-- CVAR settings after swap --")
+	for k, v in pairs(cvarOptimizations) do
+		print(k, uevrUtils.get_cvar_int(k))
+	end
+
+end
+
+local cvarOptimizationEnabled = false
+-- register_key_bind("F1", function()
+-- 	cvarOptimizationEnabled = not cvarOptimizationEnabled
+-- 	print("\nOptimization enabled:", cvarOptimizationEnabled)
+-- 	enableCVarOptimizations(cvarOptimizationEnabled)
+-- end)

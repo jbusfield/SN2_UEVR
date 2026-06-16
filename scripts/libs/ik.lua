@@ -69,6 +69,13 @@ function M.lockWristAxis(solverId, pitch, yaw, roll)
 	end
 end
 
+function M.setRootBoneRotation(rotator)
+	if #_rigInstances > 0 then
+		local rig = _rigInstances[#_rigInstances]
+		rig:setRootBoneRotation(rotator)
+	end
+end
+
 local pawnObject = nil
 function M.setPawn(newPawnObject)
 	pawnObject = newPawnObject
@@ -649,6 +656,13 @@ function Rig:setInitialTransform()
 				end
 			end
 		end
+	end
+end
+
+function Rig:setRootBoneRotation(rotator)
+	if self.meshList == nil then return end
+	for _, mesh in pairs(self.meshList or {}) do
+		mesh:SetBoneRotationByName(uevrUtils.fname_from_string("Root"), rotator, 1)
 	end
 end
 

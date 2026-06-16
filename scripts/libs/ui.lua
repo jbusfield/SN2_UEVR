@@ -64,6 +64,11 @@ Usage
                 print("Widget changed:", active)
             end)
 
+    ui.setCustomState(stateKey, value, priority) -- allow you to force a specific state value, overriding normal behavior
+	    Use nil to reset the state to its default behavior.
+        example:
+            ui.setCustomState("handsEnabled", false, 2)
+            ui.setCustomState("handsEnabled", nil)
 
 ]]--
 
@@ -72,12 +77,17 @@ local paramModule = require("libs/core/params")
 
 local M = {}
 
+M.ShapeEnum = {
+	Flat = 1,
+	Cylinder = 2
+}
 local uiConfigDev = nil
 local uiConfig = nil
 
 local headLockedUI = false
 local headLockedUISize = 2.0
 local headLockedUIPosition = {X=0, Y=0, Z=2.0}
+local headLockedUIShape = M.ShapeEnum.Flat
 
 local isFollowing = true
 local reduceMotionSickness = false
@@ -169,9 +179,11 @@ local function updateUI(force)
         if isLocked then
             uevrUtils.setUIFollowsViewOffset(headLockedUIPosition)
             uevrUtils.setUIFollowsViewSize(headLockedUISize)
+            uevrUtils.setUIShape(headLockedUIShape - 1)
         else
             uevrUtils.setUIFollowsViewOffset({X=0, Y=0, Z=2.0})
             uevrUtils.setUIFollowsViewSize(2.0)
+            uevrUtils.setUIShape(0)
         end
         uiState["viewLocked_last"] = uiState["viewLocked"]
         --M.print("Setting 2D mode to " .. tostring(viewportWidgetState["screen2D"]))
@@ -340,13 +352,17 @@ local function setCurrentGameStateText(str)
 end
 
 local function updateUIState()
+    local currentUIState = {}
+    for _, config in ipairs(stateConfigWidget) do
+        currentUIState[config.stateKey] = uiState[config.stateKey]
+        currentUIState[config.stateKey .. "Priority"] = uiState[config.stateKey .. "Priority"]
+        uiState[config.stateKey] = nil
+        uiState[config.stateKey .. "Priority"] = 0
+    end
+
     local currentViewportWidgetsStr = ""
     local widgetList = getParameter("widgetlist")
     if widgetList ~= nil then
-        for _, config in ipairs(stateConfigWidget) do
-            uiState[config.stateKey] = nil
-            uiState[config.stateKey .. "Priority"] = 0
-        end
 
         local foundWidgets = {}
         local widgetClass = uevrUtils.get_class("Class /Script/UMG.UserWidget")
@@ -414,6 +430,18 @@ local function updateUIState()
                 uiState[stateKey] = data.value
                 uiState[stateKey .. "Priority"] = data.priority or 0
             end
+        end
+    end
+
+    -- let any listeners know about state changes
+    -- use like this
+    -- uevrUtils.registerUEVRCallback("ui_state_change_remapEnabled", function(state, priority)
+    --     print("Remap enabled changed to " .. tostring(state) .. " with priority " .. tostring(priority))
+    -- end)
+    for _, config in ipairs(stateConfigWidget) do
+        if currentUIState[config.stateKey] ~= uiState[config.stateKey] then
+            --print("UI State " .. config.stateKey .. " changed to " .. tostring(uiState[config.stateKey]) .. " with priority " .. tostring(uiState[config.stateKey .. "Priority"]))
+            uevrUtils.executeUEVRCallbacksWithPriorityResult("ui_state_change_" .. config.stateKey, uiState[config.stateKey], uiState[config.stateKey .. "Priority"])
         end
     end
 
@@ -505,6 +533,8 @@ local createConfigMonitor = doOnce(function()
 				M.setHeadLockedUIPosition(paramValue)
 			elseif paramName == "headLockedUISize" then
 				M.setHeadLockedUISize(paramValue)
+			elseif paramName == "headLockedUIShape" then
+				M.setHeadLockedUIShape(paramValue)
 			elseif paramName == "reduceMotionSickness" then
                 if reduceMotionSickness then
                     uevrUtils.enableCameraLerp(paramValue, true, true, true)
@@ -544,6 +574,12 @@ function M.getConfigurationWidgets(options)
     return uiConfig.getConfigurationWidgets(options)
 end
 
+function M.setHeadLockedUIOptions(newOptions)
+    if uiConfig ~= nil then
+	    uiConfig.setHeadLockedUIOptions(newOptions)
+    end
+end
+
 function M.showConfiguration(saveFileName, options)
 	if uiConfig == nil then
 		uiConfig = require("libs/config/ui_config")
@@ -578,6 +614,12 @@ function M.setHeadLockedUISize(value)
     M.print("Setting UI Size to " .. tostring(value))
     if uiConfig ~= nil then uiConfig.setValue("headLockedUISize", value, true) end
     headLockedUISize = value
+    updateUI(true)
+end
+function M.setHeadLockedUIShape(value)
+    M.print("Setting UI Shape to " .. tostring(value))
+    if uiConfig ~= nil then uiConfig.setValue("headLockedUIShape", value, true) end
+    headLockedUIShape = value
     updateUI(true)
 end
 

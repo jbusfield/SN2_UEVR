@@ -832,6 +832,7 @@ pawn = nil -- updated every tick
 ---@class Statics
 ---@field [any] any
 Statics = nil
+GameUserSettings = nil
 WidgetBlueprintLibrary = nil
 WidgetLayoutLibrary = nil
 ---@class kismet_system_library
@@ -977,6 +978,9 @@ local isCharacterHidden = false
 local isDeveloperMode = nil
 local handedness = Handed.Right --a way to track handedness in a unified way
 
+function M.checkTArrayExists()
+    return checkTArrayExists()
+end
 
 function register_key_bind(keyName, callbackFunc)
 	keyBindList[keyName] = {}
@@ -1633,6 +1637,7 @@ function M.initUEVR(UEVR, callbackFunc)
 	kismet_string_library = M.find_default_instance("Class /Script/Engine.KismetStringLibrary")
 	kismet_rendering_library = M.find_default_instance("Class /Script/Engine.KismetRenderingLibrary")
 	Statics = M.find_default_instance("Class /Script/Engine.GameplayStatics")
+	GameUserSettings = M.find_default_instance("Class /Script/Engine.GameUserSettings")
 	WidgetBlueprintLibrary = M.find_default_instance("Class /Script/UMG.WidgetBlueprintLibrary")
     WidgetLayoutLibrary = M.find_default_instance("Class /Script/UMG.WidgetLayoutLibrary")
     
@@ -3131,6 +3136,11 @@ function M.setUIFollowsViewSize(size)
 	uevr.params.vr.set_mod_value("UI_Size", tostring(size))
 end
 
+-- 0-flat, 1-cylinder
+function M.setUIShape(overlayType)
+	uevr.params.vr.set_mod_value("UI_OverlayType", tostring(overlayType))
+end
+
 --there should be a better way to do this with the asset registry
 function M.getAssetDataFromPath(pathStr)
 	local fAssetData = M.get_struct_object("ScriptStruct /Script/CoreUObject.AssetData")
@@ -3653,7 +3663,6 @@ function M.createWidgetComponent(widget, options)
 			className = widget
 			widget = M.getActiveWidgetByClass(widget)
 		end
-		print("SSS", widget)
 
 		if M.getValid(widget) ~= nil then
 			if widget.GetAlignmentInViewport ~= nil then

@@ -145,7 +145,7 @@ local function destroyActor(actor)
 							actor:K2_DestroyComponent(component)
 							M.print("HMD Controller component destroyed")
 						end
-					end)	
+					end)
 				end
 			end
 			if actor.K2_DestroyActor ~= nil then

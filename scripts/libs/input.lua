@@ -82,8 +82,9 @@ local inputConfig = nil
 local zeroRotator = uevrUtils.rotator(0,0,0)
 local zeroVector = uevrUtils.vector(0,0,0)
 
-local localPawn = nil
+--local localPawn = nil
 local bodyMeshOverride = nil
+local preventPawnSettingsResetOnDisable = false
 
 --this module is designed to work with these UEVR settings 
 uevrUtils.set_decoupled_pitch(true)
@@ -124,6 +125,14 @@ local function getAimOffsetAdjustedRotation(rotation)
 	-- return final
 end
 getAimOffsetAdjustedRotation = uevrUtils.profiler:wrap("getAimOffsetAdjustedRotation", getAimOffsetAdjustedRotation)
+
+function M.preventPawnSettingsResetOnDisable(val)
+	preventPawnSettingsResetOnDisable = val
+end	
+
+function M.getAimOffsetAdjustedRotation(rotation)
+	return getAimOffsetAdjustedRotation(rotation)
+end
 
 function M.setRotationModeRotationDisabled(val)
 	status.rotationModeRotationDisabled = val
@@ -297,8 +306,8 @@ local cameraComponent = {
 				print("Resetting camera component world transform to parent transform")
 				-- local rotation = self.component.AttachParent:K2_GetComponentRotation()
 				-- local location = self.component.AttachParent:K2_GetComponentLocation()
-				--self.component:K2_SetWorldRotation(rotation,false,reusable_hit_result,false)
-				--self.component:K2_SetWorldLocation(location,false,reusable_hit_result,false)
+				-- self.component:K2_SetWorldRotation(rotation,false,reusable_hit_result,false)
+				-- self.component:K2_SetWorldLocation(location,false,reusable_hit_result,false)
 			end
 			if self.originalState ~= nil and self.component.bUsePawnControlRotation ~= nil then
 				self.component.bUsePawnControlRotation = self.originalState
@@ -421,7 +430,7 @@ local cameraComponent = {
 local pawnSettings = nil
 local function resetPawnSettings()
 	cameraComponent:reset()
-	local pawn = status.pawn
+	local pawn = uevrUtils.getValid(status.pawn)
 	if pawn ~= nil and pawnSettings ~= nil and pawn.bUseControllerRotationPitch ~= nil then
 		--restore pawn settings
 		--print("Restoring pawn settings")
@@ -697,6 +706,7 @@ function M.setDisabled(val)
 		decoupledYaw = nil
 		bodyRotationOffset = 0
 		lastBodyYawUpdateTime = nil
+		--M.reset()
 	end
 end
 
@@ -896,7 +906,7 @@ end
 updateDecoupledYaw = uevrUtils.profiler:wrap("updateDecoupledYaw", updateDecoupledYaw)
 
 local function initDecoupledYaw()
-	if decoupledYaw == nil then
+	if decoupledYaw == nil and rootComponent ~= nil and rootComponent.K2_GetComponentRotation ~= nil then
 		if rootComponent ~= nil then
 			local rotator = rootComponent:K2_GetComponentRotation()
 			decoupledYaw = rotator.Yaw
@@ -1232,6 +1242,10 @@ function M.setAimRotationOffset(offset)
 	aimRotationOffset = uevrUtils.rotator(offset)
 end
 
+function M.getAimRotationOffset()
+	return aimRotationOffset
+end
+	
 function M.setWeaponRotation(leftRotation, rightRotation)
 	weaponRotation = {
 		left = uevrUtils.rotator(leftRotation),
@@ -1252,23 +1266,27 @@ local function updateIsDisabled()
 		isDisabled = disabled
 		--uevr.params.vr.recenter_view()
 		uevrUtils.executeUEVRCallbacks("recenter_view")
-		resetPawnSettings()
+		if preventPawnSettingsResetOnDisable == false then
+			resetPawnSettings()
+		end
 		updateMeshRelativePosition(true)
 	end
 end
 
 uevr.sdk.callbacks.on_pre_engine_tick(function(engine, delta)
 	--set the global rootComponent variable on the earliest tick callback so it will be valid everywhere
-	getRootComponent()
 
 	--calculate the controller rotation here so it is available for updateBodyYaw and updateAim?
 
 	updateIsDisabled()
 	if not isDisabled then --and getParameter("aimMethod") ~= M.AimMethod.UEVR then
+		getRootComponent()
 		initDecoupledYaw()
 		updatePawnSettings()
 		updateAim()
 		updateBodyYaw(delta)
+	else
+		--print("Input is disabled")
 	end
 
 end)
@@ -1453,6 +1471,10 @@ local function reset()
 	cameraComponent:reset()
 	resetPawnSettings()
 	updateMeshRelativePosition(true)
+end
+
+function M.reset()
+	reset()
 end
 
 uevrUtils.registerPreLevelChangeCallback(function(level)

@@ -1634,6 +1634,7 @@ updateSelectedColors = uevrUtils.profiler:wrap("Attachments: updateSelectedColor
 
 function M.initAttachment(attachment, gripHand, options)
 	if attachment ~= nil then
+		invalidateAttachmentNameLookups()
 		if options == nil then options = {} end
 		if options.allowChildVisibilityHandling == nil or options.allowChildVisibilityHandling == true then
 			attachment:SetVisibility(true, allowChildVisibilityHandling)
@@ -1796,9 +1797,10 @@ function M.attachToMesh(attachment, mesh, socketName, gripHand, options)
 		local meshName = mesh:get_full_name()
 		local attachmentName = attachment:get_full_name()
 		local childMesh = attachment.StaticMesh or attachment.SkeletalMesh
-		--print("Checking if attachment is already a child of the mesh", meshName, attachmentName, childMesh and childMesh:get_full_name() or "nil")
+		local childMeshName = childMesh and childMesh:get_full_name() or ""
+		--print("Checking if attachment is already a child of the mesh", meshName, attachmentName, childMeshName)
 		if meshAttachmentList[meshName] ~= nil and meshAttachmentList[meshName].attachments ~= nil and meshAttachmentList[meshName].attachments[attachmentName] ~= nil then
-			if meshAttachmentList[meshName].attachments[attachmentName].childMesh == childMesh then
+			if meshAttachmentList[meshName].attachments[attachmentName].childMeshName == childMeshName then
 				if mesh.AttachChildren ~= nil then
 					for i, child in ipairs(mesh.AttachChildren) do
 						if child == attachment then
@@ -1831,7 +1833,7 @@ function M.attachToMesh(attachment, mesh, socketName, gripHand, options)
 		end
 		--local attachmentName = attachment:get_full_name()
 		--if meshAttachmentList[meshName][attachmentName] == nil then
-			meshAttachmentList[meshName].attachments[attachmentName] = {childMesh = childMesh, attachment=attachment, socket=socketName, detachFromParentOnRelease = options.detachFromParentOnRelease, maintainWorldPositionOnDetachFromParent = options.maintainWorldPositionOnDetachFromParent, attachType = M.AttachType.MESH, gripHand = gripHand}
+			meshAttachmentList[meshName].attachments[attachmentName] = {childMeshName = childMeshName, attachment=attachment, socket=socketName, detachFromParentOnRelease = options.detachFromParentOnRelease, maintainWorldPositionOnDetachFromParent = options.maintainWorldPositionOnDetachFromParent, attachType = M.AttachType.MESH, gripHand = gripHand}
 		--end
 
 		if options.reattachToOriginOnRelease == true then
@@ -1859,7 +1861,9 @@ function M.attachToMesh(attachment, mesh, socketName, gripHand, options)
 		if type(socketName) == "string" then
 			socketName = uevrUtils.fname_from_string(socketName)
 		end
-		if socketName == nil then socketName = attachment.AttachSocketName end
+		if options.useCurrentAttachedSocketName ~= false then
+			if socketName == nil then socketName = attachment.AttachSocketName end		
+		end
 		success = attachment:K2_AttachTo(mesh, socketName, 0, false)
 
 		M.initAttachment(attachment, gripHand, options)
@@ -1949,6 +1953,9 @@ end
 function M.detach(attachment, parent, attachType, originalTransform, detachFromParentOnRelease, maintainWorldPositionOnDetachFromParent)
 	--print("Detaching attachment", attachment, parent or nil, attachType)
 	if uevrUtils.getValid(attachment) ~= nil then
+		--grab the name early before its detached or else it will be lost at reattach time
+		local attachSocketName = attachment.AttachSocketName
+
 		if attachType == M.AttachType.RAW_CONTROLLER then
 			M.print("Detaching attachment from raw controller: " .. attachment:get_full_name())
 			UEVR_UObjectHook.remove_motion_controller_state(attachment)
@@ -1966,7 +1973,8 @@ function M.detach(attachment, parent, attachType, originalTransform, detachFromP
 				uevrUtils.set_component_relative_rotation(attachment, originalTransform.rotation)
 				uevrUtils.set_component_relative_scale(attachment, originalTransform.scale)
 			end
-			attachment:K2_AttachTo(parent, attachment.AttachSocketName, 0, false)
+			M.print("Reattaching to parent socket: " .. attachSocketName:to_string())
+			attachment:K2_AttachTo(parent, attachSocketName, 0, false)
 		end
 	else
 		M.print("Failed to detach attachment")
@@ -2044,8 +2052,11 @@ end
 function M.detachAllAttachments()
     M.print("Detaching all attachments from all meshes")
     for meshName, meshData in pairs(meshAttachmentList) do
+		M.print("  Detaching attachments from mesh: " .. meshName)
         if meshData.attachments ~= nil then
+			M.print("   Found attachments, detaching...")
             for attachmentName, attachmentData in pairs(meshData.attachments) do
+				M.print("    Detaching attachment: " .. attachmentName)
                 detachAndCleanup(attachmentData, true)
             end
         end
