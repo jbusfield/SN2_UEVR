@@ -760,7 +760,7 @@ function M.setPlaybackRate(montage, label, rate)
 	local animInstance, montageObject = getAnimInstanceForMontage(montage, label)
 	if animInstance ~= nil then
 		animInstance:Montage_SetPlayRate(montageObject, rate or 1.0)
-		print("Set playback rate to " .. tostring(rate) .. " for montage " .. montageObject:get_full_name() .. " on " .. tostring(label))
+		--print("Set playback rate to " .. tostring(rate) .. " for montage " .. montageObject:get_full_name() .. " on " .. tostring(label))
 	end
 end
 

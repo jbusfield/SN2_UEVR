@@ -17,8 +17,7 @@ local handsAnimation = require('libs/hands_animation')
 
 uevrUtils.setLogLevel(LogLevel.Debug)
 
-
---uevrUtils.setDeveloperMode(true)
+uevrUtils.setDeveloperMode(true)
 --hands.enableConfigurationTool()
 
 ui.init()
@@ -115,14 +114,25 @@ local configDefinition = {
 				expandArray(ui.getConfigurationWidgets, {{id="uevr_ui_reduceMotionSickness",isHidden=true}}),
 			{ widgetType = "end_rect", additionalSize = 12, rounding = 5 }, { widgetType = "unindent", width = 20 },
 			{ widgetType = "new_line" },
+			-- { widgetType = "indent", width = 20 }, { widgetType = "text", label = "Overlay" }, { widgetType = "begin_rect", },
+            --     {
+            --         widgetType = "drag_float2",
+            --         id = "overlay_scale",
+            --         label = "Scale",
+            --         speed = .01,
+            --         range = {0.01, 2},
+            --         initialValue = {1, 1}
+            --     },
+            -- { widgetType = "end_rect", additionalSize = 12, rounding = 5 }, { widgetType = "unindent", width = 20 },
+			-- { widgetType = "new_line" },
 			{ widgetType = "indent", width = 20 }, { widgetType = "text", label = "Input" }, { widgetType = "begin_rect", },
 				expandArray(input.getConfigurationWidgets, {{id="uevr_input_config_pawnRotationMode",isHidden=true}}),
 			{ widgetType = "end_rect", additionalSize = 12, rounding = 5 }, { widgetType = "unindent", width = 20 },
 			{ widgetType = "new_line" },
-			-- { widgetType = "indent", width = 20 }, { widgetType = "text", label = "Reticule" }, { widgetType = "begin_rect", },
-			-- 	expandArray(reticule.getConfigurationWidgets,{{id="uevr_reticule_eye_dominance",isHidden=true},{id="uevr_reticule_eye_dominance_offset",isHidden=true}}),
-			-- { widgetType = "end_rect", additionalSize = 12, rounding = 5 }, { widgetType = "unindent", width = 20 },
-			-- { widgetType = "new_line" },
+			{ widgetType = "indent", width = 20 }, { widgetType = "text", label = "Reticule" }, { widgetType = "begin_rect", },
+				expandArray(reticule.getConfigurationWidgets,{{id="uevr_reticule_eye_dominance",isHidden=true},{id="uevr_reticule_eye_dominance_offset",isHidden=true}}),
+			{ widgetType = "end_rect", additionalSize = 12, rounding = 5 }, { widgetType = "unindent", width = 20 },
+			{ widgetType = "new_line" },
 			{
 				widgetType = "tree_node",
 				id = "advanced_settings",
@@ -162,6 +172,11 @@ local configDefinition = {
 		}
 	}
 }
+-- local options = {
+-- 	{label = "Default", shape=ui.ShapeEnum.Flat, headLockedUISize = 2.0, headLockedUIPosition = {X=0, Y=0, Z=2.0}},
+-- 	{label = "Helmet", shape=ui.ShapeEnum.Cylinder, headLockedUISize = 0.53, headLockedUIPosition = {X=-0.02, Y=-0.07, Z=0.34}}
+-- }
+-- ui.setHeadLockedUIOptions(options)
 
 local function regenerateHands(value)
     hands.setAutoCreateHands(value == HandsType.Forearms)
@@ -349,6 +364,7 @@ function on_level_change(level)
 	hideLowHealthBackground()
 end
 
+--WBP_HoverTargetInfo_C /Engine/Transient.GameEngine_2147482582.SN2GameInstance_2147482520.WBP_MainScreen_C_2147478153.WidgetTree_2147478152.WBP_HUDScreen_C_2147478144.WidgetTree_2147478143.WBP_HoverTargetInfo
 local function getTopLevelWidgetsOnScreen(layerNames)
     local result = {}
 
@@ -419,6 +435,12 @@ setInterval(1000, function()
 				ui.removeViewportWidget(widget)
 			end
 		end
+
+		--print("Widget class name:", widgetInfo.className)
+		--get a reference to the hover widget so it can be hidden or shown on the tick
+		if widgetInfo.className == "WidgetBlueprintGeneratedClass /Game/Blueprints/UI/HUD/WBP_HUDScreen.WBP_HUDScreen_C" then
+			status.hoverWidget = widget.WBP_HoverTargetInfo
+		end
 	end
 
 	-- Check for removed widgets and clean up
@@ -485,6 +507,17 @@ local function releaseVehicle()
 	handsAnimation.setHoldingAttachment(Handed.Right, nil)
 	handsAnimation.setHoldingAttachment(Handed.Left, nil)
 end
+
+local function setOverlayScale()
+    local widget = uevrUtils.find_first_instance("WidgetBlueprintGeneratedClass /Game/Blueprints/UI/WBP_MainScreen.WBP_MainScreen_C", false)
+    if widget ~= nil then
+        print("Changing main widget layout")
+        local customScale = uevrUtils.getNativeValue(configui.getValue("overlay_scale"))
+        customScale = {X = customScale[1], Y = customScale[2]}
+        uevrUtils.setWidgetLayout(widget, status.isInInteractiveUI and {1.0, 1.0} or {customScale.X, customScale.Y}, status.isInInteractiveUI and {0.0, 0.0} or {1 - customScale.X, 1 - customScale.Y})
+    end
+end
+
 
 uevr.sdk.callbacks.on_pre_engine_tick(function(engine, delta)
 	if pawn == nil then return end
@@ -589,6 +622,12 @@ uevr.sdk.callbacks.on_pre_engine_tick(function(engine, delta)
 		end
 	end
 
+	local isInInteractiveUI = ui.isRemapDisabled()
+    if status.isInInteractiveUI ~= isInInteractiveUI then
+        status.isInInteractiveUI = isInInteractiveUI
+        setOverlayScale()
+    end
+
 end)
 
 uevrUtils.registerUEVRCallback("on_input_mesh_relative_position_change", function(x, y)
@@ -619,6 +658,12 @@ uevr.sdk.callbacks.on_post_engine_tick(function(engine, delta)
 	end
 
 	updateVehicleOrientation()
+
+	local reticuleResource = uevrUtils.getValid(status.hoverWidget,{"CurrentInteractionBrush", "ResourceObject"})
+	if reticuleResource ~= nil then
+		local name = reticuleResource:get_full_name()
+		status.hoverWidget:SetVisibility(string.find(name, "Reticle") and 1 or 0)
+	end
 end)
 
 local ANALOG_MAX = 32767
@@ -724,6 +769,10 @@ end)
 
 configui.onCreateOrUpdate("physical_driving", function(value)
 	configui.setHidden("physical_driving_info", not value)
+end)
+
+configui.onCreateOrUpdate("overlay_scale", function(value)
+    setOverlayScale()
 end)
 
 configui.create(configDefinition)

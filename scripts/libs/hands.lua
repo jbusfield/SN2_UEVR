@@ -593,7 +593,7 @@ function M.setRootBoneRotation(rotator)
 	for name, components in pairs(handComponents) do
 		for index = Handed.Left , Handed.Right do
 			local component = components[index]
-			if component ~= nil then
+			if uevrUtils.getValid(component) ~= nil and component.SetBoneRotationByName ~= nil then
 				component:SetBoneRotationByName(uevrUtils.fname_from_string("Root"), rotator, 1)
 			end
 		end

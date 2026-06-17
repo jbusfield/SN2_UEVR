@@ -341,7 +341,7 @@ local function getTargetLocationAndRotation(hand, controller)
     local loc = nil
     local rot = nil
     if accessoryStatus[hand] == nil then
-		if controller ~= nil and controller.K2_GetComponentLocation ~= nil then
+		if uevrUtils.getValid(controller) ~= nil and controller.K2_GetComponentLocation ~= nil then
 			loc = controller:K2_GetComponentLocation()
 			rot = controller:K2_GetComponentRotation()
 			--TODO hard coded for right handed weapon holding. Add left support
@@ -490,7 +490,7 @@ function Rig:initializeRigState()
 
 	local rootComponent = uevrUtils.getValid(getPawn(), {"RootComponent"})
 	if rootComponent == nil then
-		print("Rig:initializeRigState: No RootComponent on pawn")
+		M.print("Rig:initializeRigState: No RootComponent on pawn")
 		return false
 	end
 
@@ -662,7 +662,9 @@ end
 function Rig:setRootBoneRotation(rotator)
 	if self.meshList == nil then return end
 	for _, mesh in pairs(self.meshList or {}) do
-		mesh:SetBoneRotationByName(uevrUtils.fname_from_string("Root"), rotator, 1)
+		if uevrUtils.getValid(mesh) ~= nil and mesh.SetBoneRotationByName ~= nil then
+			mesh:SetBoneRotationByName(uevrUtils.fname_from_string("Root"), rotator, 1)
+		end
 	end
 end
 
@@ -1453,7 +1455,7 @@ function Rig:solveTwoBone(solverParams)
 	local endBoneLockRoll = solverParams.endBoneLockRoll or false
 
 	if meshList == nil or meshList[1] == nil then
-		print("solveTwoBone: No mesh")
+		M.print("solveTwoBone: No mesh")
 		return
 	end
 	local mesh = meshList[1]
@@ -1466,7 +1468,7 @@ function Rig:solveTwoBone(solverParams)
     VEC_UNIT_Y = VEC_UNIT_Y_FORWARD
 
 	if controllerPosWS == nil or controllerRotWS == nil then
-        print("solveTwoBone: Missing controller position/rotation",solverParams.hand, solverParams.controller:get_full_name())
+        M.print("solveTwoBone: Missing controller position/rotation" .. tostring(solverParams.hand)) --, solverParams.controller:get_full_name())
 		return
 	end
 
@@ -1477,7 +1479,7 @@ function Rig:solveTwoBone(solverParams)
 	-- so any body rotation changes this transform. Caching it causes the hand to drift
 	-- away from the controller whenever the pawn rotates.
 	if uevrUtils.getValid(mesh) == nil or mesh.K2_GetComponentToWorld == nil then
-		print("SolveVRArmIK: Mesh has no K2_GetComponentToWorld")
+		M.print("SolveVRArmIK: Mesh has no K2_GetComponentToWorld")
 		return
 	end
 	local compToWorld = mesh:K2_GetComponentToWorld()
@@ -2131,6 +2133,9 @@ function Rig:twistForearm(meshList, lowerDirCS, lowerArmRotCS, finalHandCompRot,
 		-- end
 --if solverParams.hand == Handed.Left and stopDebug == false then print("Forearm twist angle deg:", twistAngleDeg) end
 		twistAngleDeg = normalizeDeg180(twistAngleDeg)
+		if twistAngleDeg == nil then
+			return
+		end
 --if solverParams.hand == Handed.Left and stopDebug == false then print("Forearm twist angle deg 2:", twistAngleDeg) end
 		-- Unwrap against the last *applied* twist (clamped), to avoid the cached value drifting by full turns.
 		-- local prevTwistDeg = state.lastForearmTwistDegApplied or state.lastForearmTwistDegUnwrapped
