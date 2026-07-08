@@ -2382,6 +2382,38 @@ function M.getWorld()
 end
 
 
+function M.spawn_actor_of_class(className, transform, collisionMethod, owner)
+	local actorClass = M.get_class(className)
+	if actorClass == nil then
+		print("spawn_actor_of_class - class not found:", className)
+		return nil
+	end
+
+	local viewport = game_engine.GameViewport
+	if viewport == nil then
+		print("Viewport is nil")
+	end
+
+	local worldContext = viewport.World
+	if worldContext == nil then
+		print("World is nil")
+	end
+
+	if transform == nil then
+		transform = M.get_transform()
+	end
+
+	collisionMethod = collisionMethod or 1
+	local actor = Statics:BeginDeferredActorSpawnFromClass(worldContext, actorClass, transform, collisionMethod, owner)
+	if actor == nil then
+		print("spawn_actor_of_class - failed to spawn:", className)
+		return nil
+	end
+
+	Statics:FinishSpawningActor(actor, transform)
+	return actor
+end
+
 function M.spawn_actor(transform, collisionMethod, owner, tag)
 	local viewport = game_engine.GameViewport
 	if viewport == nil then
@@ -2541,11 +2573,9 @@ function M.create_component_of_class(class, manualAttachment, relativeTransform,
 		--print("Used AddComponentByClass to create component",component)
 	end
 	if component ~= nil then
-		component:SetVisibility(true)
-		component:SetHiddenInGame(false)
-		if component.SetCollisionEnabled ~= nil then
-			component:SetCollisionEnabled(0, false)
-		end
+		if component.SetVisibility ~= nil then component:SetVisibility(true) end
+		if component.SetHiddenInGame ~= nil then component:SetHiddenInGame(false) end
+		if component.SetCollisionEnabled ~= nil then component:SetCollisionEnabled(0, false) end
 	else
 		M.print("Failed to create_component_of_class because component was nil")
 	end
@@ -3813,23 +3843,24 @@ function M.getCleanHitResult(hitResult)
 		local bInitialOverlap = {}
 		local Time = {}
 		local Distance = {}
-		local Location = {}
-		local ImpactPoint = {}
-		local Normal = {}
-		local ImpactNormal = {}
+		local Location = {} --M.get_struct_object("ScriptStruct /Script/CoreUObject.Vector", false)
+		local ImpactPoint = {} --M.get_struct_object("ScriptStruct /Script/CoreUObject.Vector", false)
+		local Normal = {} --M.get_struct_object("ScriptStruct /Script/CoreUObject.Vector", false)
+		local ImpactNormal = {} --M.get_struct_object("ScriptStruct /Script/CoreUObject.Vector", false)
 		local PhysMat = {}
 		local HitActor = {}
 		local HitComponent = {}
 		local HitBoneName = {}
+		local BoneName = {}
 		local HitItem = {}
 		local ElementIndex = {}
 		local FaceIndex = {}
-		local TraceStart = {}
-		local TraceEnd = {}
+		local TraceStart = {} --M.get_struct_object("ScriptStruct /Script/CoreUObject.Vector", false)
+		local TraceEnd = {} --M.get_struct_object("ScriptStruct /Script/CoreUObject.Vector", false)
 
 		--static void BreakHitResult(const struct FHitResult& Hit, bool* bBlockingHit, bool* bInitialOverlap, float* Time, float* Distance, struct FVector* Location, struct FVector* ImpactPoint, struct FVector* Normal, struct FVector* ImpactNormal, class UPhysicalMaterial** PhysMat, class AActor** HitActor, class UPrimitiveComponent** HitComponent, class FName* HitBoneName, class FName* BoneName, int32* HitItem, int32* ElementIndex, int32* FaceIndex, struct FVector* TraceStart, struct FVector* TraceEnd);
 		local success = pcall(function()
-			Statics:BreakHitResult(hitResult, bBlockingHit, bInitialOverlap, Time, Distance, Location, ImpactPoint, Normal, ImpactNormal, PhysMat, HitActor, HitComponent, HitBoneName, HitItem, ElementIndex, FaceIndex, TraceStart, TraceEnd )
+			Statics:BreakHitResult(hitResult, bBlockingHit, bInitialOverlap, Time, Distance, Location, ImpactPoint, Normal, ImpactNormal, PhysMat, HitActor, HitComponent, HitBoneName, BoneName, HitItem, ElementIndex, FaceIndex, TraceStart, TraceEnd )
 		end)
 		if not success then
 			--M.print("BreakHitResult failed, falling back to hitResult fields", LogLevel.Warning)

@@ -447,25 +447,23 @@ local function updateUIState()
 
     setCurrentGameStateText(currentGameStateText)
 end
+updateUIState = uevrUtils.profiler:wrap("UI: updateUIState", updateUIState)
 
 local enableCutsceneDetection = doOnce(function()
     uevrUtils.registerCutsceneChangeCallback(function(inCutscene)
-        updateUIState()
-        updateUI()
+        M.forceUpdate()
     end)
 end, Once.EVER)
 
 local enablePauseDetection = doOnce(function()
     uevrUtils.registerGamePausedCallback(function(isPaused)
-        updateUIState()
-        updateUI()
+        M.forceUpdate()
     end)
 end, Once.EVER)
 
 local enableCharacterHiddenDetection = doOnce(function()
     uevrUtils.registerCharacterHiddenCallback(function(isHidden)
-        updateUIState()
-        updateUI()
+        M.forceUpdate()
     end)
 end, Once.EVER)
 
@@ -652,10 +650,14 @@ function M.registerWidgetChangeCallback(widgetName, func)
     end
 end
 
-local isInMotionSicknessCausingSceneLast = false
-uevrUtils.setInterval(500, function()
+function M.forceUpdate()
     updateUIState()
     updateUI()
+end
+
+local isInMotionSicknessCausingSceneLast = false
+uevrUtils.setInterval(500, function()
+    M.forceUpdate()
 
     local m_isInMotionSicknessCausingScene, priority = executeIsInMotionSicknessCausingSceneCallback()
 	if m_isInMotionSicknessCausingScene ~= isInMotionSicknessCausingSceneLast then

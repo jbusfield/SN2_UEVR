@@ -309,6 +309,15 @@ function M.getHandComponent(hand, componentName)
 	end
 end
 
+function M.getAllHandComponents()
+	local result = {}
+	for name, components in pairs(handComponents) do
+		table.insert(result, components[Handed.Left])
+		table.insert(result, components[Handed.Right])
+	end
+	return result
+end
+
 local fixEnabled = false
 local currentProfile = nil
 local function registerFOVFix(profile)

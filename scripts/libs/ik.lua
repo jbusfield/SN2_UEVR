@@ -170,6 +170,8 @@ local parameters = {
 local paramManager = paramModule.new(parametersFileName, parameters, true)
 paramManager:load(true)
 
+--TODO ParamManager now handles nested table keys like {"channels", 5} so we don't need to handle it here
+--Should be able to use just the last line of the function and remove the other code
 local function setParameter(key, value, persist)
 	local activeProfile = paramManager:getActiveProfile()
 	if activeProfile == nil then return end
@@ -407,7 +409,7 @@ function Rig:create()
 		for _, mesh in pairs(self.meshList or {}) do
 			if uevrUtils.getValid(mesh) ~= nil then
 				local rootComponent = uevrUtils.getValid(getPawn(), {"RootComponent"})
-				if rootComponent ~= nil then
+				if rootComponent ~= nil and mesh.RelativeLocation ~= nil then
 					local capsuleHeight = rootComponent.CapsuleHalfHeight or 0
 					--print("Capsule height:", capsuleHeight)
 					--print(self.coupling)
