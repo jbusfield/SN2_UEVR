@@ -1,6 +1,8 @@
 
 local M = {}
 
+M.extremeCompatibilityMode = false
+
 local classCache = {}
 local structCache = {}
 
@@ -11,7 +13,7 @@ end
 function M.find_required_object(name)
     local obj = uevr.api:find_uobject(name)
     if not obj then
-        M.print("Cannot find " .. name)
+        print("Cannot find " .. name)
         return nil
     end
 
@@ -37,7 +39,7 @@ end
 
 function M.find_default_instance(className)
 	local class =  M.get_class(className)
-	if class ~= nil and class.get_first_object_matching ~= nil then
+	if class ~= nil and class.get_class_default_object ~= nil then
 		return class:get_class_default_object()
 	end
 	return nil

@@ -636,7 +636,7 @@ local function refreshSocketList(id, prefix)
     else
        --need to get all the sockets for the mesh represented by id
         if callerModule ~= nil then
-            print("Requesting sockets for attachment ID: " .. tostring(id))
+            --print("Requesting sockets for attachment ID: " .. tostring(id))
             callerModule.getSocketsForAttachmentID(id, function(names)
                 print(names)
                 local socketList = {}
@@ -957,9 +957,12 @@ end
 local function refreshReplicationDropdownUI(attachmentID, prefix)
     local labels, values = buildExistingGuidDropdown()
     accessoriesMap[attachmentID]["replicationExistingGuidValues"] = values
-    pcall(function()
+    local ok, err = pcall(function()
         configui.setSelections(prefix .. "accessory_existing_guid", labels)
     end)
+    if not ok then
+        M.print("Error refreshing replication dropdown UI: " .. err)
+    end
 end
 
 local function ensureAccessoryInPickerList(attachmentID, prefix, guid)

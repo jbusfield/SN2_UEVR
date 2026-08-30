@@ -1,3 +1,6 @@
+-- #########################################################
+-- This is deprecated. Use core/plugin.lua instead
+-- #########################################################
 
 -- requires tarray_helper.dll to be in the plugins folder
 -- stubs are in place in the dll to handle "GetAllSocketNames" as a property and "GetAllSocketNames(int float, string)" as a method with parameters
@@ -5,6 +8,8 @@
 local M = {}
 
 local pendingTArrayCallbacks = {}
+
+--deprecated. Do not waste processing on this
 
 uevr.sdk.callbacks.on_lua_event(function(eventName, eventData)
     --print("Lua event received:", eventName, "Payload", eventData)

@@ -19,11 +19,11 @@ local collision = require('libs/collision')
 local plugin = require('libs/core/plugin')
 --local debugModule = require("libs/uevr_debug")
 
---uevrUtils.setLogLevel(LogLevel.Debug)
+uevrUtils.setLogLevel(LogLevel.Debug)
 --attachments.setLogLevel(LogLevel.Debug)
 --animation.setLogLevel(LogLevel.Debug)
 
---uevrUtils.setDeveloperMode(true)
+uevrUtils.setDeveloperMode(true)
 --hands.enableConfigurationTool()
 -- uevrUtils.profiler:toggle(true)
 -- register_key_bind("F4", function()
@@ -219,6 +219,19 @@ local configDefinition = {
 -- }
 -- ui.setHeadLockedUIOptions(options)
 
+register_key_bind("F2", function()
+	plugin.showDebug = true
+	local loc = controllers.getControllerLocation(Handed.Right)
+	local dir = controllers.getControllerDirection(Handed.Right)
+	local endLoc = loc + (dir * 500)
+	if loc ~= nil then
+		--plugin.executeFunction(kismet_system_library, "LineTraceSingle", uevrUtils.get_world(), {X=loc.X,Y=loc.Y,Z=loc.Z}, {X=endLoc.X,Y=endLoc.Y,Z=endLoc.Z}, 0, false, {pawn}, 0, {}, true, {R=0,G=0,B=0,A=0}, {R=0,G=0,B=0,A=0}, 0, onLineTraceSingleComplete)
+		--plugin.executeFunction(kismet_system_library, "LineTraceMulti", uevrUtils.get_world(), {X=loc.X,Y=loc.Y,Z=loc.Z}, {X=endLoc.X,Y=endLoc.Y,Z=endLoc.Z}, 0, false, {pawn}, 0, {}, true, {R=0,G=0,B=0,A=0}, {R=0,G=0,B=0,A=0}, 0, onLineTraceMultiComplete)
+		local result = plugin.executeFunction(kismet_system_library, "LineTraceMulti", uevrUtils.get_world(), loc, endLoc, 19, false, {pawn}, 0, {}, true, zero_color, zero_color, 0)
+	end
+	plugin.showDebug = false
+end)
+
 local function cleanup()
     status = {}
 end
@@ -295,18 +308,24 @@ hands.registerOnDestroyCallback(function()
 	attachments.detachGripAttachments(Handed.Left)
 end)
 
+-- Non-LOD mats fade near the camera; copy the *_LOD slots onto the primary ones.
+-- Hands: slot1 is LOD. Body: slots 2/3 are LOD twins of 0/1.
+local function useLodMats(component)
+	if component:GetNumMaterials() >= 4 then
+		component:SetMaterial(0, component:GetMaterial(2))
+		component:SetMaterial(1, component:GetMaterial(3))
+	else
+		component:SetMaterial(0, component:GetMaterial(1))
+	end
+end
+
 hands.onCreatedCallback(function(hand, component, name)
-	print("Created hand", name)
-	component:SetMaterial(0, component:GetMaterial(1))
+	useLodMats(component)
 end)
 
 ik.registerOnMeshCreatedCallback(function(meshComponentList, ikInstance)
-	local collisionParent = uevrUtils.getValid(pawn)
-	for i, meshComponent in ipairs(meshComponentList or {}) do
-		meshComponent:SetMaterial(0, meshComponent:GetMaterial(1))
-		if collisionParent == nil and meshComponent.GetOwner ~= nil then
-			collisionParent = uevrUtils.getValid(meshComponent:GetOwner())
-		end
+	for _, meshComponent in ipairs(meshComponentList or {}) do
+		useLodMats(meshComponent)
 	end
 end)
 
@@ -1221,7 +1240,7 @@ local function checkForCollision(handed)
 				--print("  Other hand already gripping this item, skipping")
 			else
 				if component:is_a(uevrUtils.get_class("Class /Script/Engine.CapsuleComponent")) then
-					--print("  Found CapsuleComponent component with parent", parent:get_full_name())
+					print("  Found CapsuleComponent component with parent", parent:get_full_name())
 					if parent ~= nil then
 						local pickup, mesh = spawnPickupProxyForWorldPop(parent, parent.RootComponent)
 						if pickup ~= nil and mesh ~= nil then
@@ -1229,21 +1248,15 @@ local function checkForCollision(handed)
 							return true
 						end
 					end
-				elseif parent:is_a(uevrUtils.get_class("Class /Script/UWEInventory.UWEBaseItem")) then
-					--print("  Found UWEBaseItem component with parent")
-					if parent ~= nil then
-						gripResourceItem(handed, parent, component, false)
-						return true
-					end
 				elseif parent:is_a(uevrUtils.get_class("Class /Script/UWEWorldPopulation2.UWEWorldPopResourceBaseActor")) then
-					--print("  Found UWEWorldPopResourceBaseActor pickup", parent:get_full_name())
+					print("  Found UWEWorldPopResourceBaseActor pickup", parent:get_full_name())
 					local pickup, mesh = spawnPickupProxyForWorldPop(parent, component)
 					if pickup ~= nil and mesh ~= nil then
 						gripResourceItem(handed, pickup, mesh, false, parent)
 						return true
 					end
 				elseif parent:is_a(uevrUtils.get_class("Class /Script/Subnautica2.SN2PickupItem")) then
-					--print("  Found SN2PickupItem pickup", parent:get_full_name(), parent:get_class():get_full_name())
+					print("  Found SN2PickupItem pickup", parent:get_full_name(), parent:get_class():get_full_name())
 					if string.find(parent:get_full_name(), "BP_AcidAnemone_MedigelSac_C", 1, true) then
 						local pickup, mesh = spawnPickupProxyForWorldPop(parent, component)
 						if pickup ~= nil and mesh ~= nil then
@@ -1264,15 +1277,44 @@ local function checkForCollision(handed)
 				-- 		status.grabItem[handed].isLocker = true
 				-- 		return true
 				-- 	end
-				elseif component:is_a(uevrUtils.get_class("Class /Script/Engine.SphereComponent")) then
+			elseif parent:is_a(uevrUtils.get_class("Class /Script/UWEInventory.UWEBaseItem")) then
+				print("  Found UWEBaseItem component with parent")
+				if parent ~= nil then
+					gripResourceItem(handed, parent, component, false)
+					return true
+				end
+			elseif component:is_a(uevrUtils.get_class("Class /Script/Engine.SphereComponent")) then
 					--instead of using the SphereComponent get the parents MeshComponent
-					--print("  Found SphereComponent component with parent", parent:get_full_name())
+					print("  Found SphereComponent component with parent", parent:get_full_name())
 					if parent.MeshComponent ~= nil then
-						--print("Gripping Unknown pickup", parent:get_full_name(), component:get_full_name())
+						print("Gripping Unknown pickup", parent:get_full_name(), component:get_full_name())
 						component:SetCollisionResponseToChannel(ECollisionChannel.ECC_Pawn, ECollisionResponse.Ignore)
 						if parent.NetMulticast_SetPhysicsEnabled ~= nil then
 							parent:NetMulticast_SetPhysicsEnabled(false, true)
 						end
+
+						-- if parent.MeshComponent ~= nil then
+						-- 	local animInstance = uevrUtils.getValid(parent.MeshComponent, {"AnimScriptInstance"})
+						-- 	if animInstance ~= nil then 
+						-- 		if animInstance.LockAIResources ~= nil then
+						-- 			animInstance:LockAIResources(true,true)
+						-- 			animInstance:SetRootMotionMode(0)
+						-- 			print("SetMeshDriver to nil")
+						-- 		else
+						-- 			print("SetMeshDriver to nil failed")
+						-- 		end
+						-- 	end
+						-- end
+
+						-- if parent.MeshComponent ~= nil then
+						-- 	local animComponent = uevrUtils.getValid(parent.BPC_CreatureAnimationComponent)
+						-- 	if animComponent ~= nil then 
+						-- 		animComponent:SetSyncDriver(nil,false,0,0)
+						-- 		animComponent:Deactivate()
+						-- 		animComponent:EndAbility()
+						-- 		print("SetSyncDriver to nil")
+						-- 	end
+						-- end
 
 						gripResourceItem(handed, parent, component, false)
 						return true

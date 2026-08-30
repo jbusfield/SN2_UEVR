@@ -86,6 +86,7 @@ local function getConfigWidgets(m_paramManager)
 		label = "Use HMD Offset",
 		initialValue = configDefaults["useRootOffset"] or true
 	},
+	{ widgetType = "indent", width = 20} ,
 	{
 		widgetType = "drag_float3",
 		id = widgetPrefix .. "rootOffset",
@@ -93,6 +94,49 @@ local function getConfigWidgets(m_paramManager)
 		speed = .1,
 		range = {-200, 200},
 		initialValue = {configDefaults["rootOffset"].X, configDefaults["rootOffset"].Y, configDefaults["rootOffset"].Z}
+	},
+	{ widgetType = "unindent", width = 20} ,
+	{
+		widgetType = "checkbox",
+		id = widgetPrefix .. "overridePlayerControllerPitch",
+		label = "Override Player Controller Pitch",
+		initialValue = configDefaults["overridePlayerControllerPitch"] or false
+	},
+	{ widgetType = "same_line" },
+	{
+		widgetType = "input_text",
+		id = widgetPrefix .. "overridePlayerControllerPitchValue",
+		label = "##overridePlayerControllerPitchValue",
+		initialValue = tostring(configDefaults["overridePlayerControllerPitchValue"] or 0),
+		width = 50
+	},
+	{
+		widgetType = "checkbox",
+		id = widgetPrefix .. "overridePlayerControllerYaw",
+		label = "Override Player Controller Yaw  ",
+		initialValue = configDefaults["overridePlayerControllerYaw"] or false
+	},
+	{ widgetType = "same_line" },
+	{
+		widgetType = "input_text",
+		id = widgetPrefix .. "overridePlayerControllerYawValue",
+		label = "##overridePlayerControllerYawValue",
+		initialValue = tostring(configDefaults["overridePlayerControllerYawValue"] or 0),
+		width = 50
+	},
+	{
+		widgetType = "checkbox",
+		id = widgetPrefix .. "overridePlayerControllerRoll",
+		label = "Override Player Controller Roll   ",
+		initialValue = configDefaults["overridePlayerControllerRoll"] or false
+	},
+	{ widgetType = "same_line" },
+	{
+		widgetType = "input_text",
+		id = widgetPrefix .. "overridePlayerControllerRollValue",
+		label = "##overridePlayerControllerRollValue",
+		initialValue = tostring(configDefaults["overridePlayerControllerRollValue"] or 0),
+		width = 50
 	},
 	{
 		widgetType = "tree_node",
@@ -119,6 +163,7 @@ local function getConfigWidgets(m_paramManager)
 				selections = {"None"},
 				initialValue = 1
 			},
+			{ widgetType = "indent", width = 10} ,
 			{
 				widgetType = "combo",
 				id = widgetPrefix .. "usePawnControlRotation",
@@ -127,6 +172,14 @@ local function getConfigWidgets(m_paramManager)
 				initialValue = 1,
 				width = 100
 			},
+			{
+				widgetType = "combo",
+				id = widgetPrefix .. "cameraResetAction",
+				label = "On Camera Deactivation",
+				selections = {"Do not reset location and rotation", "Set to parent's location and rotation"}, --  "Zero location and rotation"},
+				initialValue = 1,
+			},
+			{ widgetType = "unindent", width = 10} ,
         {
             widgetType = "end_group",
         },
@@ -227,6 +280,13 @@ local function getConfigWidgets(m_paramManager)
 					label = "Disable Rotation",
 					initialValue = configDefaults["pawnRotationModeDisableRotation"]
 				},
+				{ widgetType = "same_line"},
+				{
+					widgetType = "checkbox",
+					id = widgetPrefix .. "pawnRotationModeDisableInEarlyUpdate",
+					label = "Disable In Early Update",
+					initialValue = configDefaults["pawnRotationModeDisableInEarlyUpdate"]
+				},
 				{
 					widgetType = "slider_float",
 					id = widgetPrefix .. "pawnRotationLockedSmoothTime",
@@ -307,47 +367,61 @@ local function getConfigWidgets(m_paramManager)
 				initialValue = 1,
 				width = 100
 			},
-			{
-				widgetType = "drag_float3",
-				id = widgetPrefix .. "headOffset",
-				label = "Mesh Offset",
-				speed = .1,
-				range = {-200, 200},
-				initialValue = {configDefaults["headOffset"] and configDefaults["headOffset"].X or 0, configDefaults["headOffset"] and configDefaults["headOffset"].Y or 0, configDefaults["headOffset"] and configDefaults["headOffset"].Z or 0}
-			},
             {
                 widgetType = "checkbox",
-                id = widgetPrefix .. "useMeshHeightForHeadOffset",
-                label = "Use Mesh Height",
-                initialValue = configDefaults["useMeshHeightForHeadOffset"]
+                id = widgetPrefix .. "adjustBodyMeshPosition",
+                label = "Adjust Body Mesh Position",
+                initialValue = configDefaults["adjustBodyMeshPosition"] or true
             },
 			{
-				widgetType = "checkbox",
-				id = widgetPrefix .. "adjustForAnimation",
-				label = "Animation Movement Compensation",
-				initialValue = configDefaults["adjustForAnimation"]
+				widgetType = "begin_group",
+				id = widgetPrefix .. "body_mesh_position_group",
+				isHidden = false
 			},
-			{
-				widgetType = "combo",
-				id = widgetPrefix .. "headBones",
-				label = "Head Bone",
-				selections = {"None"},
-				initialValue = 1
-			},
-			{
-				widgetType = "checkbox",
-				id = widgetPrefix .. "adjustForEyeOffset",
-				label = "Eye Offset Compensation",
-				initialValue = configDefaults["adjustForEyeOffset"]
-			},
-			{
-				widgetType = "slider_float",
-				id = widgetPrefix .. "eyeOffset",
-				label = "Eye Offset",
-				speed = .1,
-				range = {-40, 40},
-				initialValue = configDefaults["eyeOffset"]
-			},
+				{ widgetType = "indent", width = 20} ,
+				{
+					widgetType = "drag_float3",
+					id = widgetPrefix .. "headOffset",
+					label = "Mesh Offset",
+					speed = .1,
+					range = {-200, 200},
+					initialValue = {configDefaults["headOffset"] and configDefaults["headOffset"].X or 0, configDefaults["headOffset"] and configDefaults["headOffset"].Y or 0, configDefaults["headOffset"] and configDefaults["headOffset"].Z or 0}
+				},
+				{
+					widgetType = "checkbox",
+					id = widgetPrefix .. "useMeshHeightForHeadOffset",
+					label = "Use Mesh Height",
+					initialValue = configDefaults["useMeshHeightForHeadOffset"]
+				},
+				{
+					widgetType = "checkbox",
+					id = widgetPrefix .. "adjustForAnimation",
+					label = "Animation Movement Compensation",
+					initialValue = configDefaults["adjustForAnimation"]
+				},
+				{
+					widgetType = "combo",
+					id = widgetPrefix .. "headBones",
+					label = "Head Bone",
+					selections = {"None"},
+					initialValue = 1
+				},
+				{
+					widgetType = "checkbox",
+					id = widgetPrefix .. "adjustForEyeOffset",
+					label = "Eye Offset Compensation",
+					initialValue = configDefaults["adjustForEyeOffset"]
+				},
+				{
+					widgetType = "slider_float",
+					id = widgetPrefix .. "eyeOffset",
+					label = "Eye Offset",
+					speed = .1,
+					range = {-40, 40},
+					initialValue = configDefaults["eyeOffset"]
+				},
+				{ widgetType = "unindent", width = 20} ,
+			{ widgetType = "end_group"},
 		{
 			widgetType = "tree_pop"
 		},
@@ -438,7 +512,10 @@ local function updateUIState(key)
     elseif key == "adjustForEyeOffset" then
         configui.hideWidget(widgetPrefix .. "eyeOffset", not configui.getValue(exKey))
 	elseif key == "aimCameraList" then
-		 configui.hideWidget(widgetPrefix .. "usePawnControlRotation", configui.getValue(exKey) == 1)
+		configui.hideWidget(widgetPrefix .. "usePawnControlRotation", configui.getValue(exKey) == 1)
+		configui.hideWidget(widgetPrefix .. "cameraResetAction", configui.getValue(exKey) == 1)
+	elseif key == "adjustBodyMeshPosition" then
+		configui.setHidden(widgetPrefix .. "body_mesh_position_group", not configui.getValue(exKey))
     end
 end
 
@@ -501,6 +578,30 @@ configui.onUpdate(widgetPrefix .. "rootOffset", function(value)
     updateSetting("rootOffset", {X=arr[1],Y=arr[2],Z=arr[3]})
 end)
 
+configui.onUpdate(widgetPrefix .. "overridePlayerControllerPitch", function(value)
+	updateSetting("overridePlayerControllerPitch", value)
+end)
+
+configui.onUpdate(widgetPrefix .. "overridePlayerControllerPitchValue", function(value)
+	updateSetting("overridePlayerControllerPitchValue", tonumber(value) or 0)
+end)
+
+configui.onUpdate(widgetPrefix .. "overridePlayerControllerYaw", function(value)
+	updateSetting("overridePlayerControllerYaw", value)
+end)
+
+configui.onUpdate(widgetPrefix .. "overridePlayerControllerYawValue", function(value)
+	updateSetting("overridePlayerControllerYawValue", tonumber(value) or 0)
+end)
+
+configui.onUpdate(widgetPrefix .. "overridePlayerControllerRoll", function(value)
+	updateSetting("overridePlayerControllerRoll", value)
+end)
+
+configui.onUpdate(widgetPrefix .. "overridePlayerControllerRollValue", function(value)
+	updateSetting("overridePlayerControllerRollValue", tonumber(value) or 0)
+end)
+
 configui.onUpdate(widgetPrefix .. "headBones", function(value)
 	setCurrentHeadBone(value)
 end)
@@ -538,6 +639,10 @@ end)
 
 configui.onUpdate(widgetPrefix .. "pawnRotationModeDisableRotation", function(value)
 	updateSetting("pawnRotationModeDisableRotation", value)
+end)
+
+configui.onUpdate(widgetPrefix .. "pawnRotationModeDisableInEarlyUpdate", function(value)
+	updateSetting("pawnRotationModeDisableInEarlyUpdate", value)
 end)
 
 configui.onUpdate(widgetPrefix .. "optimizeBodyLocationCalculations", function(value)
@@ -633,14 +738,29 @@ configui.onUpdate(widgetPrefix .. "usePawnControlRotation", function(value)
 	updateSetting("usePawnControlRotation", value)
 end)
 
+configui.onUpdate(widgetPrefix .. "cameraResetAction", function(value)
+	updateSetting("cameraResetAction", value)
+end)
 
+configui.onUpdate(widgetPrefix .. "adjustBodyMeshPosition", function(value)
+	updateSetting("adjustBodyMeshPosition", value)
+	updateUIState("adjustBodyMeshPosition")
+end)
+configui.onCreate(widgetPrefix .. "adjustBodyMeshPosition", function(value)
+	configui.setHidden(widgetPrefix .. "body_mesh_position_group", not value)
+end)
 
 configui.onUpdate(widgetPrefix .. "aimCameraList", function(value)
 	--get the camera name from the selection
 	local cameraName = pawnCameraList[value]
 	updateSetting("aimCamera", cameraName)
+	updateUIState("aimCameraList")
 end)
 
+configui.onCreate(widgetPrefix .. "aimCameraList", function(value)
+	configui.hideWidget(widgetPrefix .. "usePawnControlRotation", value == 1)
+	configui.hideWidget(widgetPrefix .. "cameraResetAction", value == 1)
+end)
 
 -- configui.onUpdate(widgetPrefix .. "handedness", function(value)
 -- 	uevrUtils.setHandedness(value-1)

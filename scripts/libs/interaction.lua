@@ -194,6 +194,7 @@ local trackerComponent = nil
 
 local widgetPrefix = "uevr_interaction_"
 
+local status = {}
 
 local currentLogLevel = LogLevel.Error
 function M.setLogLevel(val)
@@ -391,7 +392,7 @@ local developerWidgets = spliceableInlineArray{
 
 local function getLineTraceOrigins()
     if uevrUtils.getValid(widgetInteractionComponent) == nil or widgetInteractionComponent.K2_GetComponentLocation == nil then return nil, nil end
-    return widgetInteractionComponent:K2_GetComponentLocation(), widgetInteractionComponent:K2_GetComponentRotation()
+    return uevrUtils.getComponentLocation(widgetInteractionComponent), uevrUtils.getComponentRotation(widgetInteractionComponent)
  end
 
 local function getCurrentLinetraceOptions()
@@ -1048,7 +1049,7 @@ uevr.sdk.callbacks.on_post_engine_tick(function(engine, delta)
         laserVisible = true
     elseif interactionType == M.InteractionType.Widget or interactionType == M.InteractionType.MeshAndWidget then
 		--sometimes an error is thrown "property VirtualUserIndex is not found"t
-        pcall(function()
+        local ok, err = pcall(function()
             --if you dont do this repeatedly it doesnt stay set
             widgetInteractionComponent.VirtualUserIndex = virtualUserIndex
             widgetInteractionComponent.PointerIndex = pointerIndex
@@ -1057,9 +1058,13 @@ uevr.sdk.callbacks.on_post_engine_tick(function(engine, delta)
             widgetInteractionComponent.InteractionSource = interactionSource
             widgetInteractionComponent.bEnableHitTesting = interactionType == (M.InteractionType.Widget or interactionType == M.InteractionType.MeshAndWidget) and widgetEnableHitTesting
 		end)
+		if not ok then
+			M.print("Error setting widget interaction component properties: " .. err)
+		end
 
         local isHovering = widgetInteractionComponent.HoveredWidgetComponent ~= nil
         --print("isHovering", isHovering, widgetInteractionComponent.HoveredWidgetComponent)
+        status.isHovering = isHovering
         if isHovering then
                 --playerController.bShowMouseCursor = false
                 --widgetInteractionComponent.HoveredWidgetComponent.Widget["NeedClickSound?"] = false
@@ -1159,6 +1164,9 @@ uevr.sdk.callbacks.on_xinput_get_state(function(retval, user_index, state)
     wasButtonPressed = isButtonPressed
 end)
 
+function M.isHovering()
+	return status.isHovering
+end
 -- uevrUtils.setInterval(100, function()
 --     moveMouseCursor()
 -- end)
@@ -1168,6 +1176,7 @@ uevrUtils.registerPreLevelChangeCallback(function(level)
     widgetInteractionComponent = nil
     laserComponent = nil
     trackerComponent = nil
+    status = {}
 end)
 
 uevrUtils.setInterval(1000, function()
@@ -1178,6 +1187,7 @@ end)
 
 uevr.params.sdk.callbacks.on_script_reset(function()
     destroyWidgetInteractionComponent()
+    status = {}
 end)
 
 

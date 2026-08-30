@@ -561,3 +561,41 @@ function M.dumpWidgetEditableFields(userWidget)
 end
 
 return M
+
+--[[
+[info] CanvasPanel_0
+[info]   InvisibleButton
+[info]   LogoContainer
+[info]     LogoImage
+[info]   PressKeyPromptOverlay
+[info]     PressKeyPrompt
+[info]     XboxTextblockContainer
+[info]       LeftSidePrompt
+[info]       Image_0
+[info]       RightSidePrompt
+[info]   GammaSelection
+[info]   ContentOverlay
+[info]     MainOptions
+[info]     ExtraOptions
+[info]     DeliverablesOptions
+[info]     MenuDLCManager
+[info]     UserNameTextBlock
+[info]     VersionTextBlock
+[info]   AutosaveSplashOverlay
+[info]     VerticalBox_0
+[info]       AutosaveSplashText
+[info]       SavingSpinnerWidget
+[info]   CreditsWidget
+[info]   LegalWidget
+[info]   SavingWidget_BP
+]]--
+-- register_key_bind("F2", function()
+-- 	local userWidget = uevrUtils.getActiveWidgetByClass("WidgetBlueprintGeneratedClass /Game/UI/Menus/MainMenu/MainMenu.MainMenu_C")
+-- 	if userWidget ~= nil then
+-- 		print("Main menu widget found:")
+-- 		--widgetModule.logWidgetDescendants(userWidget)
+-- 		widgetModule.dumpWidgetEditableFields(userWidget)
+-- 	else
+-- 		print("No main menu widget found")
+-- 	end
+-- end)
